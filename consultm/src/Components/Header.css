@@ -1,0 +1,19 @@
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+.header-container h1{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    padding:0px;
+    margin:0px;
+}
