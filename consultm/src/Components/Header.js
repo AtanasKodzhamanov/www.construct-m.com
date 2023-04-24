@@ -9,6 +9,9 @@ const Header = () => {
                     <h1>Consult-M</h1>
                 </div>
                 <div className="nav">
+                    <nav>
+
+                    </nav>
                 </div>
             </div>
         </header>
