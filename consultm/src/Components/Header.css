@@ -18,8 +18,8 @@
     margin:0px;
 }
 
-.navbar{
-    display:flex;
+.nav{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -29,5 +29,10 @@
     font-size: 20px;
     letter-spacing: 2px;
     color: whitesmoke;
-    
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
 }
