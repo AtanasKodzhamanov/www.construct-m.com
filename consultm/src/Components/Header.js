@@ -60,13 +60,13 @@ const Header = () => {
                             </ScrollLink>
                         </div>
                     </div>
-                    <Link className={activeLink === '/design' ? 'active' : ''} to="/">
+                    <Link className={activeLink === '/design' ? 'active' : ''} to="/design">
                         <h3>DESIGN</h3>
                     </Link>
-                    <Link className={activeLink === '/construction' ? 'active' : ''} to="/">
+                    <Link className={activeLink === '/construction' ? 'active' : ''} to="/construction">
                         <h3>CONSTRUCTION</h3>
                     </Link>
-                    <Link className={activeLink === '/about' ? 'active' : ''} to="/">
+                    <Link className={activeLink === '/about' ? 'active' : ''} to="/about">
                         <h3>ABOUT</h3>
                     </Link>
                 </div>
