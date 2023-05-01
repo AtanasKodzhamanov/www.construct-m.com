@@ -55,11 +55,14 @@
     padding: 0 2rem;
     margin-right:1300px;
     margin-left:50px;
+    background-color: rgba(76, 96, 105, 0.8);
   }
+
+  
   .section-text{
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 1.3rem;
-    color: var(--secondary-color);
+    color: white;
     text-align: left;
   }
   .section-title{
@@ -69,6 +72,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    color: white;
   }
 
   
