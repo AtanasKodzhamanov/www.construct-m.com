@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { animated } from 'react-spring';
 import './Studies.css';
 import background from '../Assets/shard.jpg';
