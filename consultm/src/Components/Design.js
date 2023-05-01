@@ -4,7 +4,6 @@ import './Design.css';
 const Design = () => {
     return (
         <div>
-            Design
         </div>
     );
 };
