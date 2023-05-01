@@ -17,7 +17,7 @@ const Header = () => {
         <header className="header">
             <div className="header-container">
                 <div className="title">
-                    <Link className={activeLink === '/studies' ? 'active' : ''} to="/"><h1>CONSULT-M</h1></Link>
+                    <Link className={activeLink === '/studies' ? 'active' : ''} to="/"><h1>CONSTRUCT-M</h1></Link>
                 </div>
                 <div className="nav">
                     <Link className={activeLink === '/studies' ? 'active' : ''} to="/"><h3>STUDIES</h3></Link>

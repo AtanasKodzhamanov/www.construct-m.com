@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
 :root {
   --primary-color: #cc4337;
-  --secondary-color: #343a40;
+  --secondary-color: #4c6069;
   --tertiary-color: #00f;
 }
 
 a{
   text-decoration: none;
+}
+
+
+.app-body {
+  background-image: url("./Assets/25846432.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height:100vh;
+
 }

@@ -1,0 +1,23 @@
+.promo-text {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 400;
+    max-width: 500px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height:40px;
+    color: var(--secondary-color);
+    text-align: left;
+    padding: 20px;
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    height: 400px;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+  }
+  
+  @media (min-width: 768px) {
+    .promo-text {
+      transform: translate(0, 0);
+    }
+  }

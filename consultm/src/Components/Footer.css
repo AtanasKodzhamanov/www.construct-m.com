@@ -7,4 +7,5 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     z-index: 1;
+    background-color: rgba(76, 96, 105, 0.8);
 }
