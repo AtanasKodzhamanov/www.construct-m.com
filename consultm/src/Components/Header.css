@@ -28,6 +28,10 @@
     margin:0px;
 }
 
+.header-container h1:hover{
+    color:#9d9d9d;
+}
+
 .nav{
     display: flex;
     flex-direction: row;
@@ -45,6 +49,10 @@ a {
     text-decoration: none;
     color: whitesmoke;
     padding: 10px;
+}
+
+a:hover {
+  color:#9d9d9d;
 }
 
 .studies-section {
