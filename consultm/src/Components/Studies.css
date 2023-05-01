@@ -46,4 +46,29 @@
     position: relative;
     z-index: 1;
   }
+
+  .section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 0 2rem;
+    margin-right:1300px;
+    margin-left:50px;
+  }
+  .section-text{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    text-align: left;
+  }
+  .section-title{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
   
