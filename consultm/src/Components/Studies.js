@@ -1,8 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { animated, useSpring, config } from 'react-spring';
-import { Element } from 'react-scroll';
 import './Studies.css';
 import background from '../Assets/shard.jpg';
+import { useLocation, useNavigate } from 'react-router-dom';
+
 
 const useInView = (ref) => {
     const [inView, setInView] = useState(false);
@@ -31,6 +32,8 @@ const useInView = (ref) => {
     return inView;
 };
 
+
+
 const Studies = () => {
     const ref1 = useRef();
     const ref2 = useRef();
@@ -44,6 +47,24 @@ const Studies = () => {
     const animation2 = useSpring({ opacity: inView2 ? 1 : 0, config: config.slow });
     const animation3 = useSpring({ opacity: inView3 ? 1 : 0, config: config.slow });
 
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.substring(1));
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
+    }, [location]);
+
+    const handleLinkClick = (hash) => {
+        navigate(`/studies${hash}`);
+    };
+
     return (
         <animated.div
             className="parallax-container"
@@ -52,7 +73,7 @@ const Studies = () => {
             }}
         >
             <div className="sub-sections">
-                <Element name="preliminary" className="element">
+                <div id="preliminary" className="element">
                     <section ref={ref1} className="preliminary">
                         <animated.div className="section-content" style={animation1}>
                             <h1 className="section-title">Preliminary Section</h1>
@@ -64,8 +85,8 @@ const Studies = () => {
                             </p>
                         </animated.div>
                     </section>
-                </Element>
-                <Element name="real-estate" className="element">
+                </div>
+                <div id="real-estate" className="element">
                     <section ref={ref2} className="real-estate">
                         <animated.div className="section-content odd" style={animation2}>
                             <h1 className="section-title">Real Estate Section</h1>
@@ -77,8 +98,8 @@ const Studies = () => {
                             </p>
                         </animated.div>
                     </section>
-                </Element>
-                <Element name="spatial-consulting" className="element">
+                </div>
+                <div id="spatial-consulting" className="element">
                     <section ref={ref3} className="spatial-consulting">
                         <animated.div className="section-content" style={animation3}>
                             <h1 className="section-title">Spatial Consulting Section</h1>
@@ -90,8 +111,9 @@ const Studies = () => {
                             </p>
                         </animated.div>
                     </section>
-                </Element>
+                </div>
             </div>
+
         </animated.div>
     );
 };

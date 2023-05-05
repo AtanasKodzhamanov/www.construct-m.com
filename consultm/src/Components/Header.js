@@ -28,36 +28,24 @@ const Header = () => {
                             <h3>STUDIES</h3>
                         </Link>
                         <div className="scroll-links">
-                            <ScrollLink
-                                activeClass="active"
-                                to="preliminary"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
+                            <Link
                                 className="scroll-trigger"
+                                to="/studies#preliminary"
                             >
                                 Preliminary
-                            </ScrollLink>
-                            <ScrollLink
-                                activeClass="active"
-                                to="real-estate"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
+                            </Link>
+                            <Link
                                 className="scroll-trigger"
+                                to="/studies#real-estate"
                             >
                                 Real Estate
-                            </ScrollLink>
-                            <ScrollLink
-                                activeClass="active"
-                                to="spatial-consulting"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
+                            </Link>
+                            <Link
                                 className="scroll-trigger"
+                                to="/studies#spatial-consulting"
                             >
                                 Spatial Consulting
-                            </ScrollLink>
+                            </Link>
                         </div>
                     </div>
                     <Link className={activeLink === '/design' ? 'active' : ''} to="/design">
