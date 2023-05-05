@@ -1,10 +1,46 @@
-import React from 'react';
-import { animated } from 'react-spring';
+import React, { useRef, useState, useEffect } from 'react';
+import { animated, useSpring, config } from 'react-spring';
+import { Element, scroller } from 'react-scroll';
 import './Studies.css';
 import background from '../Assets/shard.jpg';
 
-const Studies = () => {
+const useInView = (ref) => {
+    const [inView, setInView] = useState(false);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setInView(entry.isIntersecting);
+            },
+            { threshold: 0.6 }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [ref]);
+
+    return inView;
+};
+
+const Studies = () => {
+    const ref1 = useRef();
+    const ref2 = useRef();
+    const ref3 = useRef();
+
+    const inView1 = useInView(ref1);
+    const inView2 = useInView(ref2);
+    const inView3 = useInView(ref3);
+
+    const animation1 = useSpring({ opacity: inView1 ? 1 : 0, config: config.slow });
+    const animation2 = useSpring({ opacity: inView2 ? 1 : 0, config: config.slow });
+    const animation3 = useSpring({ opacity: inView3 ? 1 : 0, config: config.slow });
 
     return (
         <animated.div
@@ -14,34 +50,48 @@ const Studies = () => {
             }}
         >
             <div className="sub-sections">
-
-                <section className="preliminary">
-                    <div className="section-content">
-                        <h1 className="section-title">Preliminary Section</h1>
-                        <p className="section-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                        </p>
-                    </div>
-                </section>
-                <section className="real-estate">
-                    <div className="section-content odd">
-                        <h1 className="section-title">Real Estate Section</h1>
-                        <p className="section-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                        </p>
-                    </div>
-
-                </section>
-                <section className="spatial-consulting">
-                    <div className="section-content">
-                        <h1 className="section-title">Real Estate Section</h1>
-                        <p className="section-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, </p>
-                    </div>
-
-                </section>
+                <Element name="preliminary" className="element">
+                    <section ref={ref1} className="preliminary">
+                        <animated.div className="section-content" style={animation1}>
+                            <h1 className="section-title">Preliminary Section</h1>
+                            <p className="section-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                            </p>
+                        </animated.div>
+                    </section>
+                </Element>
+                <Element name="real-estate" className="element">
+                    <section ref={ref2} className="real-estate">
+                        <animated.div className="section-content odd" style={animation2}>
+                            <h1 className="section-title">Real Estate Section</h1>
+                            <p className="section-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                            </p>
+                        </animated.div>
+                    </section>
+                </Element>
+                <Element name="spatial-consulting" className="element">
+                    <section ref={ref3} className="spatial-consulting">
+                        <animated.div className="section-content" style={animation3}>
+                            <h1 className="section-title">Spatial Consulting Section</h1>
+                            <p className="section-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                            </p>
+                        </animated.div>
+                    </section>
+                </Element>
             </div>
         </animated.div>
     );
-
 };
 
 export default Studies;

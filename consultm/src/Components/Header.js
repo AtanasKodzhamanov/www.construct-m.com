@@ -18,13 +18,13 @@ const Header = () => {
         <header className="header">
             <div className="header-container">
                 <div className="title">
-                    <Link className={activeLink === '/' ? 'active' : ''} to="/">
+                    <Link to="/">
                         <h1>CONSTRUCT-M</h1>
                     </Link>
                 </div>
                 <div className="nav">
                     <div className="studies-section">
-                        <Link className={activeLink === '/studies' ? 'active' : ''} to="/studies">
+                        <Link className={activeLink === '/studies' ? 'active' : 'inactive'} to="/studies">
                             <h3>STUDIES</h3>
                         </Link>
                         <div className="scroll-links">
