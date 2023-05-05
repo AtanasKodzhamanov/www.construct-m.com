@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 import './Studies.css';
 import background from '../Assets/shard.jpg';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 const useInView = (ref) => {
@@ -48,7 +48,6 @@ const Studies = () => {
     const animation3 = useSpring({ opacity: inView3 ? 1 : 0, config: config.slow });
 
     const location = useLocation();
-    const navigate = useNavigate();
 
     useEffect(() => {
         if (location.hash) {
@@ -60,10 +59,6 @@ const Studies = () => {
             }
         }
     }, [location]);
-
-    const handleLinkClick = (hash) => {
-        navigate(`/studies${hash}`);
-    };
 
     return (
         <animated.div

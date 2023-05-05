@@ -2,7 +2,6 @@ import React from 'react';
 import './Header.css';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
 
