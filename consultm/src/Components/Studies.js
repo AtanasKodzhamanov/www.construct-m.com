@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { animated, useSpring, config } from 'react-spring';
-import { Element, scroller } from 'react-scroll';
+import { Element } from 'react-scroll';
 import './Studies.css';
 import background from '../Assets/shard.jpg';
 
