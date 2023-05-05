@@ -28,9 +28,6 @@
     margin:0px;
 }
 
-.header-container h1:hover{
-    color:#9d9d9d;
-}
 
 .nav{
     display: flex;
@@ -49,11 +46,18 @@ a {
     text-decoration: none;
     color: whitesmoke;
     padding: 10px;
+    
 }
 
 a:hover {
-  color:#9d9d9d;
+  text-decoration: underline;
 }
+
+.title a:hover{
+  text-decoration: none;
+  
+}
+
 
 
 
