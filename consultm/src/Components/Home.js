@@ -1,7 +1,10 @@
 import React from 'react';
 import './Home.css';
+import useGoogleAnalytics from './useGoogleAnalytics';
 
 const Home = () => {
+    useGoogleAnalytics();
+
     return (
         <div className="promo-text">
             <p>At Construct-M, we understand that every project is unique and requires a customized approach. That's why we work closely with our clients to understand their specific needs and objectives, and develop tailor-made solutions that deliver results.

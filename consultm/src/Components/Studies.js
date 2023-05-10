@@ -3,6 +3,7 @@ import { animated, useSpring, config } from 'react-spring';
 import './Studies.css';
 import background from '../Assets/shard.jpg';
 import { useLocation } from 'react-router-dom';
+import useGoogleAnalytics from './useGoogleAnalytics';
 
 
 const useInView = (ref) => {
@@ -35,6 +36,9 @@ const useInView = (ref) => {
 
 
 const Studies = () => {
+    useGoogleAnalytics();
+
+
     const ref1 = useRef();
     const ref2 = useRef();
     const ref3 = useRef();
