@@ -47,15 +47,51 @@ const Header = () => {
                             </Link>
                         </div>
                     </div>
-                    <Link className={activeLink === '/design' ? 'active' : ''} to="/design">
-                        <h3>DESIGN</h3>
-                    </Link>
-                    <Link className={activeLink === '/construction' ? 'active' : ''} to="/construction">
-                        <h3>CONSTRUCTION</h3>
-                    </Link>
-                    <Link className={activeLink === '/about' ? 'active' : ''} to="/about">
-                        <h3>ABOUT</h3>
-                    </Link>
+                    <div className="design-section">
+                        <Link className={activeLink === '/design' ? 'active' : ''} to="/design">
+                            <h3>DESIGN</h3>
+                        </Link>
+                        <div className="scroll-links">
+                            <Link className="scroll-trigger" to="/design#concept">
+                                Concept
+                            </Link>
+                            <Link className="scroll-trigger" to="/design#technical">
+                                Technical
+                            </Link>
+                            <Link className="scroll-trigger" to="/design#interior">
+                                Interior
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="construction-section">
+                        <Link className={activeLink === '/construction' ? 'active' : ''} to="/construction">
+                            <h3>CONSTRUCTION</h3>
+                        </Link>
+                        <div className="scroll-links">
+                            <Link className="scroll-trigger" to="/construction#management">
+                                Management
+                            </Link>
+                            <Link className="scroll-trigger" to="/construction#works">
+                                Works
+                            </Link>
+                            <Link className="scroll-trigger" to="/construction#supervision">
+                                Supervision
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="about-section">
+                        <Link className={activeLink === '/about' ? 'active' : ''} to="/about">
+                            <h3>About</h3>
+                        </Link>
+                        <div className="scroll-links">
+                            <Link className="scroll-trigger" to="/about#team">
+                                Team
+                            </Link>
+                            <Link className="scroll-trigger" to="/about#experience">
+                                Experience
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
