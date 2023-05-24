@@ -1,0 +1,76 @@
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  .team,
+  .experience {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .team::before,
+  .experience::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+  }
+  
+  .team::before {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
+  
+  .experience::before {
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  }  
+  
+  h1 {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 0 2rem;
+    margin-right:1200px;
+    margin-left:150px;
+    background-color: rgba(76, 96, 105, 0.8);
+  }
+  .section-content.odd{
+    margin-right:150px;
+    margin-left:1200px;
+  }
+
+  
+  .section-text{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+  }
+  .section-title{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+  

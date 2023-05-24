@@ -60,49 +60,63 @@ a:hover {
 
 
 
-
+.design-section,
+.construction-section,
+.about-section,
 .studies-section {
     position: relative;
     display: inline-block;
   }
-  
-  .scroll-links {
-    display: none;
-    position: absolute;
-    top: 80%;
-    left: -30%;
-    background-color: rgba(76, 96, 105, 0.8);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .scroll-links .scroll-trigger {
-    display: block;
-    padding: 12px 16px;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .scroll-links .scroll-trigger:hover {
-    background-color: #9d9d9d;
-    
-  }
-  
 
 
-  .studies-section:hover .scroll-links {
-    display: block;
-  }
+.scroll-links {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: -30%;
+  background-color: rgba(76, 96, 105, 0.8);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.scroll-links .scroll-trigger {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.scroll-links .scroll-trigger:hover {
+  background-color: #9d9d9d;
   
-  .scroll-links .active{
-    background-color: #9d9d9d;
-    text-decoration: underline;
-  }
+}
 
-  .active{
-    text-decoration: underline;
 
-  }
 
-  
- 
+.studies-section:hover .scroll-links {
+  display: block;
+}
+
+.design-section:hover .scroll-links {
+  display: block;
+}
+
+.construction-section:hover .scroll-links {
+  display: block;
+}
+
+.about-section:hover .scroll-links {
+  display: block;
+}
+
+.scroll-links .active{
+  background-color: #9d9d9d;
+  text-decoration: underline;
+}
+
+.active{
+  text-decoration: underline;
+
+}
+
+
