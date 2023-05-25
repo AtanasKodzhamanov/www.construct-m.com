@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { animated, useSpring, config } from 'react-spring';
-import './About.css';
+import "./Page.css"
 import background from '../Assets/shard.jpg';
 import { useLocation } from 'react-router-dom';
 import useGoogleAnalytics from './useGoogleAnalytics';
@@ -66,7 +66,7 @@ const About = () => {
         >
             <div className="sub-sections">
                 <div id="team" className="element">
-                    <section ref={ref1} className="team">
+                    <section ref={ref1} className="section-container">
                         <animated.div className="section-content" style={animation1}>
                             <h1 className="section-title">Preliminary Section</h1>
                             <p className="section-text">
@@ -79,8 +79,8 @@ const About = () => {
                     </section>
                 </div>
                 <div id="experience" className="element">
-                    <section ref={ref2} className="experience">
-                        <animated.div className="section-content odd" style={animation2}>
+                    <section ref={ref2} className="section-container right">
+                        <animated.div className="section-content" style={animation2}>
                             <h1 className="section-title">Experience Section</h1>
                             <p className="section-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis

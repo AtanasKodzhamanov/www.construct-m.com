@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { animated, useSpring, config } from 'react-spring';
-import './Construction.css';
+import './Page.css';
 import background from '../Assets/shard.jpg';
 import { useLocation } from 'react-router-dom';
 import useGoogleAnalytics from './useGoogleAnalytics';
@@ -71,7 +71,7 @@ const Construction = () => {
         >
             <div className="sub-sections">
                 <div id="management" className="element">
-                    <section ref={ref1} className="management">
+                    <section ref={ref1} className="section-container">
                         <animated.div className="section-content" style={animation1}>
                             <h1 className="section-title">Management Section</h1>
                             <p className="section-text">
@@ -84,8 +84,8 @@ const Construction = () => {
                     </section>
                 </div>
                 <div id="works" className="element">
-                    <section ref={ref2} className="works">
-                        <animated.div className="section-content odd" style={animation2}>
+                    <section ref={ref2} className="section-container right">
+                        <animated.div className="section-content" style={animation2}>
                             <h1 className="section-title">Works Section</h1>
                             <p className="section-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
@@ -97,7 +97,7 @@ const Construction = () => {
                     </section>
                 </div>
                 <div id="supervision" className="element">
-                    <section ref={ref3} className="supervision">
+                    <section ref={ref3} className="section-container">
                         <animated.div className="section-content" style={animation3}>
                             <h1 className="section-title">Supervision Section</h1>
                             <p className="section-text">
