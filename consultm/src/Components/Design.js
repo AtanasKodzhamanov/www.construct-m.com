@@ -79,6 +79,7 @@ const Design = () => {
                                 ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
                             </p>
                         </animated.div>
+
                     </section>
                 </div>
                 <div id="technical" className="element">

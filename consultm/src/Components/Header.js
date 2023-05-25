@@ -81,7 +81,7 @@ const Header = () => {
                     </div>
                     <div className="about-section">
                         <Link className={activeLink === '/about' ? 'active' : ''} to="/about">
-                            <h3>About</h3>
+                            <h3>ABOUT</h3>
                         </Link>
                         <div className="scroll-links">
                             <Link className="scroll-trigger" to="/about#team">
