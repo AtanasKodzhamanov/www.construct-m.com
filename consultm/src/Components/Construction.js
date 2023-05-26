@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 import './Page.css';
-import background from '../Assets/shard.jpg';
+import background from '../Assets/construction-background.jpg';
 import { useLocation } from 'react-router-dom';
 import useGoogleAnalytics from './useGoogleAnalytics';
 

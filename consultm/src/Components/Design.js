@@ -1,9 +1,17 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, Suspense } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 import './Page.css';
 import background from '../Assets/shard.jpg';
 import { useLocation } from 'react-router-dom';
 import useGoogleAnalytics from './useGoogleAnalytics';
+import model from '../Assets/cottage_fbx.fbx';
+import { Canvas, useLoader } from "@react-three/fiber";
+import { FBXLoader } from "three-stdlib";
+
+const Model = () => {
+    const fbx = useLoader(FBXLoader, '../Assets/cottage_fbx.fbx');
+    return <primitive object={fbx} scale={0.01} />;
+};
 
 const useInView = (ref) => {
     const [inView, setInView] = useState(false);
@@ -61,12 +69,21 @@ const Design = () => {
     }, [location]);
 
     return (
+
         <animated.div
             className="parallax-container"
             style={{
                 backgroundImage: `url(${background})`,
             }}
         >
+            <Canvas>
+                <ambientLight intensity={0.5} />
+                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                <pointLight position={[-10, -10, -10]} />
+                <Suspense fallback={null}>
+                    <Model />
+                </Suspense>
+            </Canvas>
             <div className="sub-sections">
                 <div id="concept" className="element">
                     <section ref={ref1} className="section-container">
@@ -78,6 +95,7 @@ const Design = () => {
                                 euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
                                 ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
                             </p>
+
                         </animated.div>
 
                     </section>

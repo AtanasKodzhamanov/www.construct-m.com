@@ -120,3 +120,18 @@ a:hover {
 }
 
 
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: whitesmoke;
+}
+.title img{
+  width: 100px;
+  height: 100px;
+}

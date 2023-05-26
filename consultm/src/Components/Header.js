@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import logo from '../Assets/logo.png';
 
 const Header = () => {
 
@@ -20,6 +21,7 @@ const Header = () => {
                     <Link to="/">
                         <h1>CONSTRUCT-M</h1>
                     </Link>
+                    <img src={logo} alt="logo" />
                 </div>
                 <div className="nav">
                     <div className="studies-section">
