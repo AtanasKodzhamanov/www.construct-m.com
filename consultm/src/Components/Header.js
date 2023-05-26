@@ -2,7 +2,6 @@ import React from 'react';
 import './Header.css';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import logo from '../Assets/logo.png';
 
 const Header = () => {
 
@@ -21,7 +20,6 @@ const Header = () => {
                     <Link to="/">
                         <h1>CONSTRUCT-M</h1>
                     </Link>
-                    <img src={logo} alt="logo" />
                 </div>
                 <div className="nav">
                     <div className="studies-section">
@@ -33,19 +31,19 @@ const Header = () => {
                                 className="scroll-trigger"
                                 to="/studies#preliminary"
                             >
-                                Preliminary
+                                <h4>Preliminary</h4>
                             </Link>
                             <Link
                                 className="scroll-trigger"
                                 to="/studies#real-estate"
                             >
-                                Real Estate
+                                <h4>Real Estate</h4>
                             </Link>
                             <Link
                                 className="scroll-trigger"
                                 to="/studies#spatial-consulting"
                             >
-                                Spatial Consulting
+                                <h4>Spatial Consulting</h4>
                             </Link>
                         </div>
                     </div>
@@ -55,13 +53,13 @@ const Header = () => {
                         </Link>
                         <div className="scroll-links">
                             <Link className="scroll-trigger" to="/design#concept">
-                                Concept
+                                <h4>Concept</h4>
                             </Link>
                             <Link className="scroll-trigger" to="/design#technical">
-                                Technical
+                                <h4>Technical</h4>
                             </Link>
                             <Link className="scroll-trigger" to="/design#interior">
-                                Interior
+                                <h4>Interior</h4>
                             </Link>
                         </div>
                     </div>
@@ -71,13 +69,13 @@ const Header = () => {
                         </Link>
                         <div className="scroll-links">
                             <Link className="scroll-trigger" to="/construction#management">
-                                Management
+                                <h4>Management</h4>
                             </Link>
                             <Link className="scroll-trigger" to="/construction#works">
-                                Works
+                                <h4>Works</h4>
                             </Link>
                             <Link className="scroll-trigger" to="/construction#supervision">
-                                Supervision
+                                <h4>Supervision</h4>
                             </Link>
                         </div>
                     </div>
@@ -87,10 +85,10 @@ const Header = () => {
                         </Link>
                         <div className="scroll-links">
                             <Link className="scroll-trigger" to="/about#team">
-                                Team
+                                <h4>Team</h4>
                             </Link>
                             <Link className="scroll-trigger" to="/about#experience">
-                                Experience
+                                <h4>Experience</h4>
                             </Link>
                         </div>
                     </div>

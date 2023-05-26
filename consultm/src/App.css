@@ -15,13 +15,3 @@ a{
   text-decoration: none;
 }
 
-
-.app-body {
-  background-image: url("./Assets/25846432.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left center;
-  height:100vh;
-
-}
-
