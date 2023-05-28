@@ -15,14 +15,14 @@ const Home = () => {
     return (
         <div className="home-container">
             <div className="slideshow-container">
-                <Slideshow slides={slides} interval={2000} />
+                <Slideshow slides={slides} interval={4000} />
             </div>
             <div className="bottom-text-container">
                 <div className="promo-text">
-                    <p>Whether you need help with a complex engineering challenge or require support for a new product launch, we have the skills and knowledge to deliver exceptional results.</p>
+                    <p>We are readily available to help with your current or future real estate or constructuon investment.</p>
                 </div>
                 <div className="promo-text">
-                    <p>At Construct-M, we understand that every project is unique and requires a customized approach. That's why we work closely with our clients to understand their specific needs and objectives, and develop tailor-made solutions that deliver results.
+                    <p>You can rely on a team with more than 10 years of experience of each member.
                     </p>
                 </div>
             </div>

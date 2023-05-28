@@ -1,8 +1,8 @@
 .promo-text {
     font-family: 'Saira Extra Condensed', sans-serif;
     font-weight: 400;
-    max-width: 500px;
-    max-height:300px;
+    max-width: 600px;
+    max-height:fit-content;
     font-size: 1.3vw;
     letter-spacing: 3px;
     line-height:40px;
@@ -11,6 +11,8 @@
     backdrop-filter: blur(10px);
     background-color: rgba(76, 96, 105, 0.8);
     padding:50px;
+    padding-top:25px;
+    padding-bottom:25px;
     margin:20px;
   }
 
