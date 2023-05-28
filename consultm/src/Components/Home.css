@@ -2,18 +2,24 @@
     font-family: 'Saira Extra Condensed', sans-serif;
     font-weight: 400;
     max-width: 500px;
-    font-size: 1.5vw;
+    max-height:300px;
+    font-size: 1.3vw;
     letter-spacing: 3px;
     line-height:40px;
     color: white;
     text-align: left;
     backdrop-filter: blur(10px);
-    margin-right:5%;
     background-color: rgba(76, 96, 105, 0.8);
-    padding:20px;
+    padding:50px;
+    margin:20px;
   }
 
-  
+  .bottom-text-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
   
   @media (min-width: 768px) {
     .promo-text {
@@ -25,7 +31,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: 100vh;
     background-image: url("../Assets/25846432.jpg");
     background-size: cover;
