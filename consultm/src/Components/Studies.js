@@ -4,6 +4,8 @@ import './Page.css';
 import background from '../Assets/shard.jpg';
 import { useLocation } from 'react-router-dom';
 import useGoogleAnalytics from './useGoogleAnalytics';
+import Slideshow from './Slideshow';
+
 
 
 const useInView = (ref) => {
@@ -38,6 +40,11 @@ const useInView = (ref) => {
 const Studies = () => {
     useGoogleAnalytics();
 
+    const slides = [
+        'https://i.etsystatic.com/20176948/r/il/130f6b/4892745686/il_1588xN.4892745686_2a0s.jpg',
+        'https://i.etsystatic.com/20176948/r/il/b12d07/4941008161/il_794xN.4941008161_x0pz.jpg',
+        'https://i.etsystatic.com/20176948/r/il/566166/4974757951/il_794xN.4974757951_f4ge.jpg',
+    ];
 
     const ref1 = useRef();
     const ref2 = useRef();
@@ -83,10 +90,17 @@ const Studies = () => {
                                 ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
                             </p>
                         </animated.div>
+                        <div className="slideshow-container">
+                            <Slideshow slides={slides} interval={4000} images={1} />
+                        </div>
                     </section>
+
                 </div>
                 <div id="real-estate" className="element">
                     <section ref={ref2} className="section-container right">
+                        <div className="slideshow-container">
+                            <Slideshow slides={slides} interval={4000} images={1} />
+                        </div>
                         <animated.div className="section-content" style={animation2}>
                             <h1 className="section-title">Real Estate Section</h1>
                             <p className="section-text">
@@ -109,6 +123,9 @@ const Studies = () => {
                                 ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
                             </p>
                         </animated.div>
+                        <div className="slideshow-container">
+                            <Slideshow slides={slides} interval={4000} images={1} />
+                        </div>
                     </section>
                 </div>
             </div>

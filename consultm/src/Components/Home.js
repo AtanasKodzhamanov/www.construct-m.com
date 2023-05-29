@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div className="home-container">
             <div className="slideshow-container">
-                <Slideshow slides={slides} interval={4000} />
+                <Slideshow slides={slides} interval={4000} images={3} />
             </div>
             <div className="bottom-text-container">
                 <div className="promo-text">

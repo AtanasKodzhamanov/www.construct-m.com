@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Slideshow.css';
 
-const Slideshow = ({ slides, interval = 2000 }) => {
+const Slideshow = ({ slides, interval = 2000, images = 1 }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [nextSlide, setNextSlide] = useState(1);
 
@@ -19,25 +19,16 @@ const Slideshow = ({ slides, interval = 2000 }) => {
     return (
         <>
             {slides.map((slide, index) => (
-                <div
-                    className={`slideshow-image-container ${index === currentSlide ? 'active' : ''}`}
-                    key={index}
-                >
-                    <img
-                        className="slideshow-image"
-                        src={slide}
-                        alt="Slide"
-                    />
-                    <img
-                        className="slideshow-image"
-                        src={slides[(index + 1) % slides.length]}
-                        alt="Slide"
-                    />
-                    <img
-                        className="slideshow-image"
-                        src={slides[(index + 2) % slides.length]}
-                        alt="Slide"
-                    />
+                <div className={`slideshow-image-container ${index === currentSlide ? 'active' : ''}`} key={index}>
+                    {[...Array(images)].map((_, i) => (
+                        <img
+                            className="slideshow-image"
+                            src={slides[(index + i) % slides.length]}
+                            alt="Slide"
+                            key={i}
+                            style={{ width: `${100 / images}%`, height: "100%", objectFit: "cover" }}
+                        />
+                    ))}
                 </div>
             ))}
         </>

@@ -19,9 +19,8 @@
 }
 
 .slideshow-image {
-  width: 33.333%; /* force each image to take 50% of the width of the container */
-  height: 100%;
-  object-fit: cover; /* you can keep this as cover or switch to contain based on how you want to handle the aspect ratio */
+/* styling applied directly to the component*/
+  object-fit: cover;
 }
 
 .slideshow-image-container.active {
