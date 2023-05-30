@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className="app-body">
-      <Header />
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />

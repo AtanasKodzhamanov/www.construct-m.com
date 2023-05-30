@@ -5,7 +5,7 @@ import background from '../Assets/shard.jpg';
 import { useLocation } from 'react-router-dom';
 import useGoogleAnalytics from './useGoogleAnalytics';
 import Slideshow from './Slideshow';
-
+import Header from './Header';
 
 
 const useInView = (ref) => {
@@ -72,65 +72,68 @@ const Studies = () => {
     }, [location]);
 
     return (
-        <animated.div
-            className="parallax-container"
-            style={{
-                backgroundImage: `url(${background})`,
-            }}
-        >
-            <div className="sub-sections">
-                <div id="preliminary" className="element">
-                    <section ref={ref1} className="section-container">
-                        <animated.div className="section-content" style={animation1}>
-                            <h1 className="section-title">Preliminary Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-                        </animated.div>
-                        <div className="slideshow-container">
-                            <Slideshow slides={slides} interval={4000} images={1} />
-                        </div>
-                    </section>
+        <>
+            <Header />
+            <animated.div
+                className="parallax-container"
+                style={{
+                    backgroundImage: `url(${background})`,
+                }}
+            >
+                <div className="sub-sections">
+                    <div id="preliminary" className="element">
+                        <section ref={ref1} className="section-container">
+                            <animated.div className="section-content" style={animation1}>
+                                <h1 className="section-title">Preliminary Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
+                            </animated.div>
+                            <div className="slideshow-container">
+                                <Slideshow slides={slides} interval={4000} images={1} />
+                            </div>
+                        </section>
 
+                    </div>
+                    <div id="real-estate" className="element">
+                        <section ref={ref2} className="section-container right">
+                            <div className="slideshow-container">
+                                <Slideshow slides={slides} interval={4000} images={1} />
+                            </div>
+                            <animated.div className="section-content" style={animation2}>
+                                <h1 className="section-title">Real Estate Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
+                            </animated.div>
+                        </section>
+                    </div>
+                    <div id="spatial-consulting" className="element">
+                        <section ref={ref3} className="section-container">
+                            <animated.div className="section-content" style={animation3}>
+                                <h1 className="section-title">Spatial Consulting Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
+                            </animated.div>
+                            <div className="slideshow-container">
+                                <Slideshow slides={slides} interval={4000} images={1} />
+                            </div>
+                        </section>
+                    </div>
                 </div>
-                <div id="real-estate" className="element">
-                    <section ref={ref2} className="section-container right">
-                        <div className="slideshow-container">
-                            <Slideshow slides={slides} interval={4000} images={1} />
-                        </div>
-                        <animated.div className="section-content" style={animation2}>
-                            <h1 className="section-title">Real Estate Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-                        </animated.div>
-                    </section>
-                </div>
-                <div id="spatial-consulting" className="element">
-                    <section ref={ref3} className="section-container">
-                        <animated.div className="section-content" style={animation3}>
-                            <h1 className="section-title">Spatial Consulting Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-                        </animated.div>
-                        <div className="slideshow-container">
-                            <Slideshow slides={slides} interval={4000} images={1} />
-                        </div>
-                    </section>
-                </div>
-            </div>
 
-        </animated.div>
+            </animated.div>
+        </>
     );
 };
 

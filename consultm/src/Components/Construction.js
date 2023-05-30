@@ -4,6 +4,7 @@ import './Page.css';
 import background from '../Assets/construction-background.jpg';
 import { useLocation } from 'react-router-dom';
 import useGoogleAnalytics from './useGoogleAnalytics';
+import Header from './Header';
 
 const useInView = (ref) => {
     const [inView, setInView] = useState(false);
@@ -63,55 +64,58 @@ const Construction = () => {
 
 
     return (
-        <animated.div
-            className="parallax-container"
-            style={{
-                backgroundImage: `url(${background})`,
-            }}
-        >
-            <div className="sub-sections">
-                <div id="management" className="element">
-                    <section ref={ref1} className="section-container">
-                        <animated.div className="section-content" style={animation1}>
-                            <h1 className="section-title">Management Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-                        </animated.div>
-                    </section>
+        <>
+            <Header />
+            <animated.div
+                className="parallax-container"
+                style={{
+                    backgroundImage: `url(${background})`,
+                }}
+            >
+                <div className="sub-sections">
+                    <div id="management" className="element">
+                        <section ref={ref1} className="section-container">
+                            <animated.div className="section-content" style={animation1}>
+                                <h1 className="section-title">Management Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
+                            </animated.div>
+                        </section>
+                    </div>
+                    <div id="works" className="element">
+                        <section ref={ref2} className="section-container right">
+                            <animated.div className="section-content" style={animation2}>
+                                <h1 className="section-title">Works Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
+                            </animated.div>
+                        </section>
+                    </div>
+                    <div id="supervision" className="element">
+                        <section ref={ref3} className="section-container">
+                            <animated.div className="section-content" style={animation3}>
+                                <h1 className="section-title">Supervision Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
+                            </animated.div>
+                        </section>
+                    </div>
                 </div>
-                <div id="works" className="element">
-                    <section ref={ref2} className="section-container right">
-                        <animated.div className="section-content" style={animation2}>
-                            <h1 className="section-title">Works Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-                        </animated.div>
-                    </section>
-                </div>
-                <div id="supervision" className="element">
-                    <section ref={ref3} className="section-container">
-                        <animated.div className="section-content" style={animation3}>
-                            <h1 className="section-title">Supervision Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-                        </animated.div>
-                    </section>
-                </div>
-            </div>
 
-        </animated.div>
+            </animated.div>
+        </>
     );
 };
 

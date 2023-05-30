@@ -8,6 +8,7 @@ import model from '../Assets/cottage_fbx.fbx';
 import { Canvas, useLoader } from "@react-three/fiber";
 import { FBXLoader } from "three-stdlib";
 import { OrbitControls } from "@react-three/drei";
+import Header from './Header';
 
 const Model = () => {
     const fbx = useLoader(FBXLoader, model);
@@ -83,73 +84,74 @@ const Design = () => {
     }, [location]);
 
     return (
+        <>
+            <Header />
+            <animated.div
+                className="parallax-container"
+                style={{
+                    backgroundImage: `url(${background})`,
+                }}
+            >
+                <div className="sub-sections">
+                    <div id="concept" className="element">
+                        <section ref={ref1} className="section-container">
+                            <animated.div className="section-content" style={animation1}>
+                                <h1 className="section-title">Concept Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
 
-        <animated.div
-            className="parallax-container"
-            style={{
-                backgroundImage: `url(${background})`,
-            }}
-        >
-
-            <div className="sub-sections">
-                <div id="concept" className="element">
-                    <section ref={ref1} className="section-container">
-                        <animated.div className="section-content" style={animation1}>
-                            <h1 className="section-title">Concept Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-
-                        </animated.div>
-                        <div style={{ backgroundColor: 'rgba(76, 96, 105, 0.8)', width: '500px', height: '500px' }}>
-                            {webglSupport ? (
-                                <Canvas>
-                                    <ambientLight />
-                                    <pointLight position={[10, 10, 10]} />
-                                    <Model />
-                                    <OrbitControls />
-                                </Canvas>
-                            ) : (
-                                // Fallback content here
-                                <div>
-                                    <h1>Sorry, your browser does not support WebGL.</h1>
-                                </div>
-                            )}
-                        </div>
-                    </section>
+                            </animated.div>
+                            <div style={{ backgroundColor: 'rgba(76, 96, 105, 0.8)', width: '500px', height: '500px' }}>
+                                {webglSupport ? (
+                                    <Canvas>
+                                        <ambientLight />
+                                        <pointLight position={[10, 10, 10]} />
+                                        <Model />
+                                        <OrbitControls />
+                                    </Canvas>
+                                ) : (
+                                    // Fallback content here
+                                    <div>
+                                        <h1>Sorry, your browser does not support WebGL.</h1>
+                                    </div>
+                                )}
+                            </div>
+                        </section>
+                    </div>
+                    <div id="technical" className="element">
+                        <section ref={ref2} className="section-container right">
+                            <animated.div className="section-content" style={animation2}>
+                                <h1 className="section-title">Technical Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
+                            </animated.div>
+                        </section>
+                    </div>
+                    <div id="interior" className="element">
+                        <section ref={ref3} className="section-container">
+                            <animated.div className="section-content" style={animation3}>
+                                <h1 className="section-title">Interior Section</h1>
+                                <p className="section-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
+                                    tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
+                                    euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
+                                    ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
+                                </p>
+                            </animated.div>
+                        </section>
+                    </div>
                 </div>
-                <div id="technical" className="element">
-                    <section ref={ref2} className="section-container right">
-                        <animated.div className="section-content" style={animation2}>
-                            <h1 className="section-title">Technical Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-                        </animated.div>
-                    </section>
-                </div>
-                <div id="interior" className="element">
-                    <section ref={ref3} className="section-container">
-                        <animated.div className="section-content" style={animation3}>
-                            <h1 className="section-title">Interior Section</h1>
-                            <p className="section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
-                                tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl ut nisl. Sed
-                                euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc nisl
-                                ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio, quis
-                            </p>
-                        </animated.div>
-                    </section>
-                </div>
-            </div>
 
-        </animated.div>
+            </animated.div>
+        </>
     );
 };
 

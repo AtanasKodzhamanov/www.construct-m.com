@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Home.css';
 import useGoogleAnalytics from './useGoogleAnalytics';
 import Slideshow from './Slideshow';
-
+import Header from './Header';
 const Home = () => {
     useGoogleAnalytics();
     const [images, setImages] = useState(3);
@@ -20,6 +20,10 @@ const Home = () => {
     };
 
     useEffect(() => {
+        // Call the function right after the component mounts
+        updateImagesCount();
+
+        // Call the function whenever the window resizes    
         window.addEventListener('resize', updateImagesCount);
 
         return () => {
@@ -38,6 +42,7 @@ const Home = () => {
 
     return (
         <div className="home-container">
+            <Header />
             <div className="slideshow-container">
                 <Slideshow slides={slides} interval={4000} images={images} />
             </div>
