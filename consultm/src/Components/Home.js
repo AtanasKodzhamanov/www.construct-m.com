@@ -38,7 +38,6 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            <h1>{window.innerWidth}</h1>
             <div className="slideshow-container">
                 <Slideshow slides={slides} interval={4000} images={images} />
             </div>
