@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 import useGoogleAnalytics from './useGoogleAnalytics';
 import Slideshow from './Slideshow';
 
 const Home = () => {
     useGoogleAnalytics();
+    const [images, setImages] = useState(3);
+
+    const updateImagesCount = () => {
+        if (window.innerWidth >= 1200) {
+            setImages(3);
+        }
+        else if (window.innerWidth > 800) {
+            setImages(2);
+        }
+        else {
+            setImages(1);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', updateImagesCount);
+
+        return () => {
+            window.removeEventListener('resize', updateImagesCount);
+        };
+    }, []);
 
     const slides = [
         'https://i.etsystatic.com/20176948/r/il/130f6b/4892745686/il_1588xN.4892745686_2a0s.jpg',
@@ -12,10 +33,14 @@ const Home = () => {
         'https://i.etsystatic.com/20176948/r/il/566166/4974757951/il_794xN.4974757951_f4ge.jpg',
     ];
 
+
+
+
     return (
         <div className="home-container">
+            <h1>{window.innerWidth}</h1>
             <div className="slideshow-container">
-                <Slideshow slides={slides} interval={4000} images={3} />
+                <Slideshow slides={slides} interval={4000} images={images} />
             </div>
             <div className="bottom-text-container">
                 <div className="promo-text">
