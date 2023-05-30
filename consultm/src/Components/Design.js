@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, Suspense } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 import './Page.css';
 import background from '../Assets/shard.jpg';
@@ -7,10 +7,11 @@ import useGoogleAnalytics from './useGoogleAnalytics';
 import model from '../Assets/cottage_fbx.fbx';
 import { Canvas, useLoader } from "@react-three/fiber";
 import { FBXLoader } from "three-stdlib";
+import { OrbitControls } from "@react-three/drei";
 
 const Model = () => {
-    const fbx = useLoader(FBXLoader, '../Assets/cottage_fbx.fbx');
-    return <primitive object={fbx} scale={0.01} />;
+    const fbx = useLoader(FBXLoader, model);
+    return <primitive object={fbx} scale={0.0015} />;
 };
 
 const useInView = (ref) => {
@@ -76,14 +77,7 @@ const Design = () => {
                 backgroundImage: `url(${background})`,
             }}
         >
-            <Canvas>
-                <ambientLight intensity={0.5} />
-                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-                <pointLight position={[-10, -10, -10]} />
-                <Suspense fallback={null}>
-                    <Model />
-                </Suspense>
-            </Canvas>
+
             <div className="sub-sections">
                 <div id="concept" className="element">
                     <section ref={ref1} className="section-container">
@@ -97,7 +91,14 @@ const Design = () => {
                             </p>
 
                         </animated.div>
-
+                        <div style={{ backgroundColor: 'rgba(76, 96, 105, 0.8)', width: '500px', height: '500px' }}>
+                            <Canvas>
+                                <ambientLight />
+                                <pointLight position={[10, 10, 10]} />
+                                <Model />
+                                <OrbitControls />
+                            </Canvas>
+                        </div>
                     </section>
                 </div>
                 <div id="technical" className="element">

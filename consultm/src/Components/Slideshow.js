@@ -3,12 +3,10 @@ import './Slideshow.css';
 
 const Slideshow = ({ slides, interval = 2000, images = 1 }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [nextSlide, setNextSlide] = useState(1);
 
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-            setNextSlide((prevSlide) => (prevSlide + 2) % slides.length);
         }, interval);
 
         return () => {
