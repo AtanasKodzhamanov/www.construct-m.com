@@ -116,7 +116,6 @@ const Design = () => {
                                 // Fallback content here
                                 <div>
                                     <h1>Sorry, your browser does not support WebGL.</h1>
-                                    // Any other fallback content
                                 </div>
                             )}
                         </div>
