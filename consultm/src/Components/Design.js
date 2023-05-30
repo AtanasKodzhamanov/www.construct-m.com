@@ -41,8 +41,21 @@ const useInView = (ref) => {
     return inView;
 };
 
+
+function webglAvailable() {
+    try {
+        const canvas = document.createElement('canvas');
+        return !!(window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')));
+    } catch (e) {
+        return false;
+    }
+}
+
+
 const Design = () => {
     useGoogleAnalytics();
+
+    const webglSupport = webglAvailable();
 
     const ref1 = useRef();
     const ref2 = useRef();
@@ -92,12 +105,20 @@ const Design = () => {
 
                         </animated.div>
                         <div style={{ backgroundColor: 'rgba(76, 96, 105, 0.8)', width: '500px', height: '500px' }}>
-                            <Canvas>
-                                <ambientLight />
-                                <pointLight position={[10, 10, 10]} />
-                                <Model />
-                                <OrbitControls />
-                            </Canvas>
+                            {webglSupport ? (
+                                <Canvas>
+                                    <ambientLight />
+                                    <pointLight position={[10, 10, 10]} />
+                                    <Model />
+                                    <OrbitControls />
+                                </Canvas>
+                            ) : (
+                                // Fallback content here
+                                <div>
+                                    <h1>Sorry, your browser does not support WebGL.</h1>
+                                    // Any other fallback content
+                                </div>
+                            )}
                         </div>
                     </section>
                 </div>
