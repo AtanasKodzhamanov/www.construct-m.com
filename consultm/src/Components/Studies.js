@@ -73,13 +73,13 @@ const Studies = () => {
 
     return (
         <>
-            <Header />
+
             <animated.div
                 className="parallax-container"
                 style={{
                     backgroundImage: `url(${background})`,
                 }}
-            >
+            ><Header />
                 <div className="sub-sections">
                     <div id="preliminary" className="element">
                         <section ref={ref1} className="section-container">
