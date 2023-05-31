@@ -14,19 +14,21 @@
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 400;
   max-width: 40%;
+  min-height:5%;
   max-height:fit-content;
-  font-size: 1.3vw;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
   letter-spacing: 3px;
   line-height:40px;
   color: white;
   text-align: left;
   backdrop-filter: blur(10px);
   background-color: rgba(76, 96, 105, 0.8);
-  padding:50px;
-  padding-top:25px;
-  padding-bottom:25px;
-  margin:20px;
+  padding:2rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  margin:1rem;
 }
+
 
 .bottom-text-container{
   display: flex;
@@ -35,9 +37,21 @@
   justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .bottom-text-container{
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 768px) {
   .promo-text {
-    transform: translate(0, 0);
+    max-width: 100%;
+    margin:0px;
+    margin-top:1rem;
+    padding:1rem;
+    margin:1rem;
   }
 }
 

@@ -22,6 +22,15 @@ z-index: 1;
   .section-container.right{
     justify-content: right;
   }
+
+  @media (max-width: 768px) {
+    .section-container.right{
+      flex-direction: column-reverse;
+    }
+    .section-container.right{
+      justify-content: center;
+    }
+  }
   
   .section-container::before{
     content: "";
@@ -44,6 +53,12 @@ padding: 2rem;
 max-width: 40%;
 margin:4%;
 background-color: rgba(76, 96, 105, 0.8);
+}
+
+@media (max-width: 768px) {
+  .section-content{
+    max-width: 100%;
+  }
 }
 
 .section-text{

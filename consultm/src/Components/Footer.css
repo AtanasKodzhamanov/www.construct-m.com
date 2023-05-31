@@ -1,5 +1,5 @@
 .footer-container {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
@@ -7,14 +7,25 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     z-index: 1;
-    background-color: rgba(76, 96, 105, 0.95);
+    background-color: rgba(76, 96, 105, 1);
 }
 
 .footer-text{
     font-family: 'Saira Extra Condensed', sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    letter-spacing: 2px;
     color: white;
-    margin-left:20px;
+    
+}
+
+@media (max-width: 768px) {
+    .footer-text{
+        letter-spacing: 0px;
+    }
+}
+
+p.footer-text {
+    margin:0px; 
+    margin-left:clamp(0.1rem, 2vw, 2rem);
 }
