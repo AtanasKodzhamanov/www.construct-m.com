@@ -1,5 +1,4 @@
 import './App.css';
-import Header from './Components/Header';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Studies from './Components/Studies';
