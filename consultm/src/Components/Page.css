@@ -9,6 +9,7 @@
 h1 {
 position: relative;
 z-index: 1;
+
 }
 
 .section-container {
@@ -52,7 +53,7 @@ justify-content: flex-end;
 padding: 2rem;
 max-width: 40%;
 margin:4%;
-background-color: rgba(76, 96, 105, 0.8);
+background-color: rgba(76, 96, 105, 0.95);
 }
 
 @media (max-width: 768px) {
@@ -63,13 +64,14 @@ background-color: rgba(76, 96, 105, 0.8);
 
 .section-text{
 font-family: 'Saira Extra Condensed', sans-serif;
-font-size: 1.5rem;
+font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 color: white;
 text-align: left;
 }
 .section-title{
 font-family: 'Saira Extra Condensed', sans-serif;
-font-size: 3rem;
+font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+
 color: var(--secondary-color);
 text-align: center;
 margin: 0;

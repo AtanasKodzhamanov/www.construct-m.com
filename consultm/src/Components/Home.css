@@ -12,23 +12,34 @@
 
 .promo-text {
   font-family: 'Saira Extra Condensed', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   max-width: 40%;
   min-height:5%;
   max-height:fit-content;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  letter-spacing: 3px;
-  line-height:40px;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  line-height:30px;
   color: white;
   text-align: left;
-  backdrop-filter: blur(10px);
-  background-color: rgba(76, 96, 105, 0.8);
+  background-color: rgba(76, 96, 105, 0.95);
   padding:2rem;
   padding-top:1rem;
   padding-bottom:1rem;
   margin:1rem;
 }
 
+.promo-text p{
+  padding:0px;
+}
+
+@media (max-width: 768px) {
+  .promo-text {
+    max-width: 100%;
+    margin:0px;
+    margin-top:1rem;
+    padding:1rem;
+    margin:1rem;
+  }
+}
 
 .bottom-text-container{
   display: flex;
@@ -45,13 +56,4 @@
 
 
 
-@media (max-width: 768px) {
-  .promo-text {
-    max-width: 100%;
-    margin:0px;
-    margin-top:1rem;
-    padding:1rem;
-    margin:1rem;
-  }
-}
 

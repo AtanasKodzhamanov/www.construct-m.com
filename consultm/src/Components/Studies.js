@@ -40,10 +40,24 @@ const useInView = (ref) => {
 const Studies = () => {
     useGoogleAnalytics();
 
-    const slides = [
-        'https://i.etsystatic.com/20176948/r/il/130f6b/4892745686/il_1588xN.4892745686_2a0s.jpg',
-        'https://i.etsystatic.com/20176948/r/il/b12d07/4941008161/il_794xN.4941008161_x0pz.jpg',
-        'https://i.etsystatic.com/20176948/r/il/566166/4974757951/il_794xN.4974757951_f4ge.jpg',
+    const slides1 = [
+        'https://dienamics.com.au/wp-content/uploads/2018/11/Building.jpg',
+        'http://blogs.kcrw.com/whichwayla/wp-content/uploads/2015/09/DSC02226.jpg',
+        'https://pittcc.edu/wp-content/uploads/2018/04/Building-Construction.jpg',
+    ];
+
+    const slides2 = [
+        'https://www.countycouncilsnetwork.org.uk/wp-content/uploads/Construction-site-1.jpeg',
+        'https://upload.wikimedia.org/wikipedia/commons/4/4e/Construction_in_Toronto_May_2012.jpg',
+        'https://www.clearb2b.com/_assets/images/industries_bg_building_construction.jpg',
+        'https://cdn.dnaindia.com/sites/default/files/styles/full/public/2019/08/24/861879-builders-thinkstock.jpg',
+        'https://dienamics.com.au/wp-content/uploads/2018/11/Building.jpg'
+    ];
+
+    const slides3 = [
+        'https://www.clearb2b.com/_assets/images/industries_bg_building_construction.jpg',
+        'https://cdn.dnaindia.com/sites/default/files/styles/full/public/2019/08/24/861879-builders-thinkstock.jpg',
+        'https://dienamics.com.au/wp-content/uploads/2018/11/Building.jpg'
     ];
 
     const ref1 = useRef();
@@ -93,7 +107,7 @@ const Studies = () => {
                                 </p>
                             </animated.div>
                             <div className="slideshow-container">
-                                <Slideshow slides={slides} interval={4000} images={1} />
+                                <Slideshow slides={slides1} interval={4000} images={1} />
                             </div>
                         </section>
 
@@ -101,7 +115,7 @@ const Studies = () => {
                     <div id="real-estate" className="element">
                         <section ref={ref2} className="section-container right">
                             <div className="slideshow-container">
-                                <Slideshow slides={slides} interval={4000} images={1} />
+                                <Slideshow slides={slides2} interval={4000} images={1} />
                             </div>
                             <animated.div className="section-content" style={animation2}>
                                 <h1 className="section-title">Real Estate Section</h1>
@@ -126,7 +140,7 @@ const Studies = () => {
                                 </p>
                             </animated.div>
                             <div className="slideshow-container">
-                                <Slideshow slides={slides} interval={4000} images={1} />
+                                <Slideshow slides={slides3} interval={4000} images={1} />
                             </div>
                         </section>
                     </div>

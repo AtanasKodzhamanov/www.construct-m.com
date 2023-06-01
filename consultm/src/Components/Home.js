@@ -32,13 +32,12 @@ const Home = () => {
     }, []);
 
     const slides = [
-        'https://i.etsystatic.com/20176948/r/il/130f6b/4892745686/il_1588xN.4892745686_2a0s.jpg',
-        'https://i.etsystatic.com/20176948/r/il/b12d07/4941008161/il_794xN.4941008161_x0pz.jpg',
-        'https://i.etsystatic.com/20176948/r/il/566166/4974757951/il_794xN.4974757951_f4ge.jpg',
+        'https://www.countycouncilsnetwork.org.uk/wp-content/uploads/Construction-site-1.jpeg',
+        'https://upload.wikimedia.org/wikipedia/commons/4/4e/Construction_in_Toronto_May_2012.jpg',
+        'https://www.clearb2b.com/_assets/images/industries_bg_building_construction.jpg',
+        'https://cdn.dnaindia.com/sites/default/files/styles/full/public/2019/08/24/861879-builders-thinkstock.jpg',
+        'https://dienamics.com.au/wp-content/uploads/2018/11/Building.jpg'
     ];
-
-
-
 
     return (
         <div className="home-container">
