@@ -1,80 +1,77 @@
 .parallax-container {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 h1 {
-position: relative;
-z-index: 1;
-
+  position: relative;
+  z-index: 1;
 }
 
 .section-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-  }
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
 
-  .section-container.right{
-    justify-content: right;
-  }
-
-  @media (max-width: 768px) {
-    .section-container.right{
-      flex-direction: column-reverse;
-    }
-    .section-container.right{
-      justify-content: center;
-    }
-  }
-  
-  .section-container::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    z-index: -1;
-  }
-  
-
-.section-content{
-display: flex;
-flex-direction: column;
-align-items: left;
-justify-content: flex-end;
-padding: 2rem;
-max-width: 40%;
-margin:4%;
-background-color: rgba(76, 96, 105, 0.95);
+.section-container.right {
+  justify-content: right;
 }
 
 @media (max-width: 768px) {
-  .section-content{
+  .section-container.right {
+    flex-direction: column-reverse;
+  }
+  .section-container.right {
+    justify-content: center;
+  }
+}
+
+.section-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-end;
+  padding: 2rem;
+  max-width: 40%;
+  margin: 4%;
+  background-color: rgba(76, 96, 105, 0.95);
+}
+
+@media (max-width: 768px) {
+  .section-content {
     max-width: 100%;
   }
 }
 
-.section-text{
-font-family: 'Saira Extra Condensed', sans-serif;
-font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-color: white;
-text-align: left;
+.section-text {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  color: white;
+  text-align: left;
 }
-.section-title{
-font-family: 'Saira Extra Condensed', sans-serif;
-font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+.section-title {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 
-color: var(--secondary-color);
-text-align: center;
-margin: 0;
-padding: 0;
-color: white;
+  color: var(--secondary-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
 }

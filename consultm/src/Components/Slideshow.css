@@ -19,7 +19,7 @@
 }
 
 .slideshow-image {
-/* styling applied directly to the component*/
+  /* styling applied directly to the component*/
   object-fit: cover;
 }
 

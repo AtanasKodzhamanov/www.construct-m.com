@@ -1,47 +1,46 @@
-
-.home-container{
-    display: flex;
-    flex-direction: column;
-    background-image: url("../Assets/25846432.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    height:100vh;
-    justify-content: flex-start;
+.home-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../Assets/25846432.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 100vh;
+  justify-content: flex-start;
 }
 
 .promo-text {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 300;
   max-width: 40%;
-  min-height:5%;
-  max-height:fit-content;
+  min-height: 5%;
+  max-height: fit-content;
   font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  line-height:30px;
+  line-height: 30px;
   color: white;
   text-align: left;
   background-color: rgba(76, 96, 105, 0.95);
-  padding:2rem;
-  padding-top:1rem;
-  padding-bottom:1rem;
-  margin:1rem;
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 1rem;
 }
 
-.promo-text p{
-  padding:0px;
+.promo-text p {
+  padding: 0px;
 }
 
 @media (max-width: 768px) {
   .promo-text {
     max-width: 100%;
-    margin:0px;
-    margin-top:1rem;
-    padding:1rem;
-    margin:1rem;
+    margin: 0px;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 
-.bottom-text-container{
+.bottom-text-container {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -49,11 +48,7 @@
 }
 
 @media (max-width: 768px) {
-  .bottom-text-container{
+  .bottom-text-container {
     flex-direction: column;
   }
 }
-
-
-
-

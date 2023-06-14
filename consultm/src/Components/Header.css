@@ -1,20 +1,19 @@
-.header-container{
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%; 
-    padding-right:5%;
-    color:var(--primary-color);
-    background-color: rgba(76, 96, 105, 1);
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1000;
-    height:75px;
-    top:0;
+.header-container {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: var(--primary-color);
+  background-color: rgba(76, 96, 105, 1);
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  height: 75px;
+  top: 0;
 }
-
 
 .header-container h1 {
   font-family: 'Saira Extra Condensed', sans-serif;
@@ -48,46 +47,40 @@
   margin: 0;
 }
 
-
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: whitesmoke;
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: whitesmoke;
 }
 
 a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 10px;
-    
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-.title a:hover{
+.title a:hover {
   text-decoration: none;
-
 }
-
-
 
 .design-section,
 .construction-section,
 .about-section,
 .studies-section {
-    position: relative;
-    display: inline-block;
-  }
-
+  position: relative;
+  display: inline-block;
+}
 
 .scroll-links {
   display: none;
@@ -108,10 +101,7 @@ a:hover {
 
 .scroll-links .scroll-trigger:hover {
   background-color: #9d9d9d;
-  
 }
-
-
 
 .studies-section:hover .scroll-links {
   display: block;
@@ -129,18 +119,16 @@ a:hover {
   display: block;
 }
 
-.scroll-links .active{
+.scroll-links .active {
   background-color: #9d9d9d;
   text-decoration: underline;
 }
 
-.active{
+.active {
   text-decoration: underline;
-
 }
 
-
-.title img{
+.title img {
   width: 100px;
   height: 100px;
 }
@@ -148,7 +136,7 @@ a:hover {
 /* Sidebar */
 /* The side navigation menu */
 .sidenav {
-  display:none;
+  display: none;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -161,7 +149,7 @@ a:hover {
 }
 
 /* The navigation menu links */
-.sidenav a{
+.sidenav a {
   text-decoration: none;
   transition: 0.3s;
 }
@@ -191,20 +179,20 @@ a:hover {
 /* Style the hamburger icon */
 #hamburger-icon {
   color: #000;
-  display:none;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
   .nav {
-      display: none;
+    display: none;
   }
 
-  #hamburger-icon{
-      display: block;
+  #hamburger-icon {
+    display: block;
   }
 
-  .sidenav{
-    display:flex;
+  .sidenav {
+    display: flex;
     flex-direction: column;
   }
 }

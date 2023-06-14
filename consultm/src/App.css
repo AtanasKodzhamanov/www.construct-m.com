@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;300;400;500;600;700;800;900&display=swap');
 
-
 :root {
   --primary-color: #cc4337;
   --secondary-color: #4c6069;
@@ -12,7 +11,7 @@ body {
   height: 100vh;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -21,7 +20,7 @@ a{
   font-weight: 400;
   font-size: 1.3vw;
   letter-spacing: 3px;
-  line-height:40px;
+  line-height: 40px;
   color: white;
   text-align: left;
 }
@@ -39,4 +38,3 @@ a{
     flex-direction: column;
   }
 }
-
