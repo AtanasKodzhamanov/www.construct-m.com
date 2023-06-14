@@ -18,6 +18,7 @@
     "react-scroll": "^1.8.9",
     "react-spring": "^9.7.1",
     "react-three-fiber": "^6.0.13",
+    "serve": "^14.2.0",
     "three": "^0.152.2",
     "three-stdlib": "^2.22.4",
     "web-vitals": "^2.1.4"
@@ -25,10 +26,11 @@
   "scripts": {
     "predoploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "serve build -s -n -L -p $PORT"
   },
   "eslintConfig": {
     "extends": [
