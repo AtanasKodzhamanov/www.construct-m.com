@@ -46,14 +46,12 @@ const Home = () => {
       <div className="bottom-text-container">
         <div className="promo-text">
           <p>
-            We are readily available to help with your current or future real
-            estate or constructuon investment.
+            We are happy to help with your real estate, design or construction project - contact us for more information.
           </p>
         </div>
         <div className="promo-text">
           <p>
-            You can rely on a team with more than 10 years of experience of each
-            member.
+            You can rely on a team with more than 10 years of experience.
           </p>
         </div>
       </div>
