@@ -10,18 +10,23 @@
 }
 
 .promo-text {
-  font-family: 'Saira Extra Condensed', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Sofia Sans', sans-serif;
   font-weight: 300;
   width: 30%;
   min-height: 5%;
   max-height: fit-content;
   font-size: clamp(1.4rem, 2.5vw, 1.6rem);
-  line-height: 30px;
+  line-height: 35px;
   color: white;
   text-align: left;
-  background-color: rgba(76, 96, 105, 0.95);
+  background-color: var(--primary-color);
   padding: 3rem;
   margin: 1rem;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .promo-text p {
@@ -54,4 +59,13 @@
     align-items: center;
 
   }
+}
+
+.hr-line {
+  border: none;
+  border-top: 1px solid white; /* Make the line white */
+  color: white;
+  background-color: white;
+  height: 1px;
+  width: 50%; /* Set the length to 50% of its parent element */
 }

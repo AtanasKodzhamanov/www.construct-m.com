@@ -4,16 +4,14 @@
   left: 0;
   right: 0;
   height: fit-content;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
   z-index: 1;
-  background-color: rgba(76, 96, 105, 1);
+  background-color: var(--primary-color);
 }
 
 .footer-text {
   font-family: 'Saira Extra Condensed', sans-serif;
-  font-weight: 300;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-weight: 400;
+  font-size: clamp(1rem, 2vw, 1.3rem);
   letter-spacing: 2px;
   color: white;
 }

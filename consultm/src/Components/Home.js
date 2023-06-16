@@ -48,11 +48,13 @@ const Home = () => {
           <p>
             We are happy to help with your real estate, design or construction project - contact us for more information.
           </p>
+          <hr class="hr-line"></hr>
         </div>
         <div className="promo-text">
           <p>
             You can rely on a team with more than 10 years of experience.
           </p>
+          <hr class="hr-line"></hr>
         </div>
       </div>
     </div>
