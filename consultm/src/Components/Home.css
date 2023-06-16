@@ -57,7 +57,7 @@
   .bottom-text-container {
     flex-direction: column;
     align-items: center;
-
+    max-width: 95%;
   }
 }
 

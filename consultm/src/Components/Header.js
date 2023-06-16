@@ -19,7 +19,7 @@ const Header = () => {
 
     if (navStatus) {
       // Open the sidenav
-      sidenav.style.width = '60%'
+      sidenav.style.width = '100%'
     } else {
       // Close the sidenav
       sidenav.style.width = '0'
