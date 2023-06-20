@@ -1,0 +1,33 @@
+.contactForm{
+    display: flex;
+    flex-direction: row;
+    padding:5rem;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.infoBox{
+    padding:5rem;
+    flex:1;
+    background-color: #4a555c;
+    color: white;
+}
+
+.inputBox{
+    padding:5rem;
+    flex:2;
+    background-color: ghostwhite;
+}
+
+.nameEmail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+    padding: 1rem;
+    font-weight: bold;
+}

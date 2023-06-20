@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <p className="footer-text">
-        Email: todibuildsbig@abv.bg | Phone Number: 0899 311 414 | Address: Belashtica{' '}
+        © 2023 CONSTRUCT-M. All rights reserved.
       </p>
     </div>
   )

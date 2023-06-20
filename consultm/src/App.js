@@ -6,6 +6,7 @@ import Design from './Components/Design'
 import Construction from './Components/Construction'
 import About from './Components/About'
 import Home from './Components/Home'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   )
 }
