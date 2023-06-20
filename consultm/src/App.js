@@ -4,7 +4,6 @@ import { Routes, Route } from 'react-router-dom'
 import Studies from './Components/Studies'
 import Design from './Components/Design'
 import Construction from './Components/Construction'
-import Footer from './Components/Footer'
 import About from './Components/About'
 import Home from './Components/Home'
 
@@ -20,7 +19,6 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
-      <Footer />
     </div>
   )
 }
