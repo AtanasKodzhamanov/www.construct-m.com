@@ -103,14 +103,9 @@ const Studies = () => {
           <div id="preliminary" className="element">
             <section ref={ref1} className="section-container">
               <animated.div className="section-content" style={animation1}>
-                <h1 className="section-title">Preliminary Section</h1>
+                <h1 className="section-title">Preliminary Studies</h1>
                 <p className="section-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio,
-                  quis aliquam nunc nisl ut nisl. Sed euismod, nisl quis
-                  tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc
-                  nisl ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc
-                  nisl ultrices odio, quis
+                  Defines the outlines of future development sites so that they comply with the current urban development plan.
                 </p>
               </animated.div>
               <div className="slideshow-container">
@@ -124,14 +119,9 @@ const Studies = () => {
                 <Slideshow slides={slides2} interval={4000} images={1} />
               </div>
               <animated.div className="section-content" style={animation2}>
-                <h1 className="section-title">Real Estate Section</h1>
+                <h1 className="section-title">Real Estate</h1>
                 <p className="section-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio,
-                  quis aliquam nunc nisl ut nisl. Sed euismod, nisl quis
-                  tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc
-                  nisl ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc
-                  nisl ultrices odio, quis
+                  Provides you with an integrated solution for the essential communications and engineering networks in the development as well as coordinated due diligange - verification of the chain of ownership, сhecking for encumbrances - mortgages and foreclosures, limited property rights - right of use, easement right, building right, legal disputes with the subject property, owner verification.
                 </p>
               </animated.div>
             </section>
@@ -139,14 +129,9 @@ const Studies = () => {
           <div id="spatial-consulting" className="element">
             <section ref={ref3} className="section-container">
               <animated.div className="section-content" style={animation3}>
-                <h1 className="section-title">Spatial Consulting Section</h1>
+                <h1 className="section-title">Spatial</h1>
                 <p className="section-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio,
-                  quis aliquam nunc nisl ut nisl. Sed euismod, nisl quis
-                  tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc
-                  nisl ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc
-                  nisl ultrices odio, quis
+                  Assists you in determining the volume of construction within the legally permissible limits - storey heights, spatial solution for individual floors, schematics of facades, basis of landscaping.
                 </p>
               </animated.div>
               <div className="slideshow-container">

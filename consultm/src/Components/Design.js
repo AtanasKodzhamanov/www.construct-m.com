@@ -105,14 +105,9 @@ const Design = () => {
           <div id="concept" className="element">
             <section ref={ref1} className="section-container">
               <animated.div className="section-content" style={animation1}>
-                <h1 className="section-title">Concept Section</h1>
+                <h1 className="section-title">Concept</h1>
                 <p className="section-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio,
-                  quis aliquam nunc nisl ut nisl. Sed euismod, nisl quis
-                  tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc
-                  nisl ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc
-                  nisl ultrices odio, quis
+                  The scope and content of the conceptual design are essential for the selection of the architectural-spatial solution, structural solution, installation and technological solutions, safety systems and more as required by the design contract.
                 </p>
               </animated.div>
               <div
@@ -141,14 +136,9 @@ const Design = () => {
           <div id="technical" className="element">
             <section ref={ref2} className="section-container right">
               <animated.div className="section-content" style={animation2}>
-                <h1 className="section-title">Technical Section</h1>
+                <h1 className="section-title">Technical</h1>
                 <p className="section-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio,
-                  quis aliquam nunc nisl ut nisl. Sed euismod, nisl quis
-                  tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc
-                  nisl ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc
-                  nisl ultrices odio, quis
+                  The technical design clarifies and complements the conceptual design as well as develops the assessment of compliance with the requirements for the structures, serves as a basis for the building permit issue and execution of the works until completion of the project.
                 </p>
               </animated.div>
             </section>
@@ -156,14 +146,9 @@ const Design = () => {
           <div id="interior" className="element">
             <section ref={ref3} className="section-container">
               <animated.div className="section-content" style={animation3}>
-                <h1 className="section-title">Interior Section</h1>
+                <h1 className="section-title">Interior</h1>
                 <p className="section-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  euismod, nisl quis tincidunt aliquam, nunc nisl ultrices odio,
-                  quis aliquam nunc nisl ut nisl. Sed euismod, nisl quis
-                  tincidunt aliquam, nunc nisl ultrices odio, quis aliquam nunc
-                  nisl ut nisl. Sed euismod, nisl quis tincidunt aliquam, nunc
-                  nisl ultrices odio, quis
+                  Creating healthier enviroment, planned and organised to suit the available space as well as the preferred design and aesthetics.
                 </p>
               </animated.div>
             </section>
