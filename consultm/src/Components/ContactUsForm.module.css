@@ -1,33 +1,133 @@
-.contactForm{
+.contact-form{
     display: flex;
     flex-direction: row;
-    padding:5rem;
-    width: 80%;
+    padding:48px;
+    width: 100%;
     margin: auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+    .contact-form{
+        flex-direction: column;
+        padding:16px;
+    }
+}
     
-}
-
-.infoBox{
-    padding:5rem;
+.info-box{
+    padding:64px;
     flex:1;
-    background-color: #4a555c;
     color: white;
+    background-color: var(--primary-color);
 }
 
-.inputBox{
-    padding:5rem;
+
+
+.input-box{
+    padding:64px;
     flex:2;
-    background-color: ghostwhite;
+    background-color: #F8F9FA; 
 }
 
-.nameEmail{
-    display: flex;
-    flex-direction: row;
+@media screen and (max-width: 900px) {
+    .info-box{
+        padding:32px;
+        flex-basis: 100%;
+    }
+    .input-box{
+        padding:32px;
+        flex-basis: 100%;
+    }
+}
+    
+ul{
+    margin:0;
+    padding:0;
+    margin-top:2rem;
+}
+li{
+    list-style-type: none;
+    font-weight: bold;
+    padding:1rem;
+    padding-bottom:0.5rem;
+}
+
+p{
+    color: white;
+    text-align: left;
+}
+
+h3{
+    text-align: left;
+}
+
+.form-input-content{
+    display:flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-li{
-    list-style-type: none;
-    padding: 1rem;
-    font-weight: bold;
+.form-input-fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-input-fields input{
+    background-color: #F8F9FA; 
+    width: 50%;
+    padding: 0.5rem;
+    margin-bottom:1rem;
+    border: none;
+    border-bottom: 1px solid var(--primary-color); 
+    font: inherit;
+}
+
+.form-input-fields textarea{
+    font: inherit;
+    background-color: #F8F9FA; 
+    width: 100%;
+    min-height:100px;
+    padding: 0.5rem;
+    margin-bottom:1rem;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.form-input-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.captcha-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 0px solid #fff;
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.captcha-button{
+    display: flex;
+    flex-direction: column;
+}
+.captcha-button h3{
+    text-align: center;
+}
+.submit-button{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    width: 50%;
+    margin-top: 1rem;
+    font: inherit;
+    cursor: pointer;
 }
