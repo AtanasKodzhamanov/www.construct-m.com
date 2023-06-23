@@ -4,7 +4,7 @@
 :root {
   --primary-color: #4a555c;
   --secondary-color: #4c6069;
-  --tertiary-color: #00f;
+  --accent-color: #00f;
 }
 
 body {
@@ -14,18 +14,62 @@ body {
 
 a {
   text-decoration: none;
+  color: whitesmoke;
+  padding: 10px;
 }
 
-.p {
+p {
   font-family: 'Sofia Sans', sans-serif;
   font-weight: 400;
   font-size: 1.3vw;
   letter-spacing: 3px;
   line-height: 40px;
-  color: white;
+  color: whitesmoke;
   text-align: left;
 }
 
+h1{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px black;
+
+}
+
+h2{
+  text-shadow: 0 0 1px black;
+
+}
+
+h3{
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.5vw; /* Adjust the value as needed */
+  font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px black;
+
+}
+
+h4{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 100;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  letter-spacing: 0vw; /* Adjust the value as needed */
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px black;
+
+}
 /* Media Queries */
 /*
 @custom-media --phone (max-width: 768px);

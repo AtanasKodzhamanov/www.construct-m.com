@@ -71,13 +71,13 @@ const Construction = () => {
 
   return (
     <>
-      <Header />
       <animated.div
         className="parallax-container"
         style={{
           backgroundImage: `url(${background})`,
         }}
       >
+        <Header />
         <div className="sub-sections">
           <div id="management" className="element">
             <section ref={ref1} className="section-container">

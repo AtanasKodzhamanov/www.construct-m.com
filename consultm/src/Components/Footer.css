@@ -5,7 +5,6 @@
   right: 0;
   height: fit-content;
   z-index: 1;
-  background-color: var(--primary-color);
 }
 
 .footer-text {

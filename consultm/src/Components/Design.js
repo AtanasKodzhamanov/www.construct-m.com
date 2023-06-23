@@ -94,7 +94,6 @@ const Design = () => {
 
   return (
     <>
-      <Header />
       <animated.div
         className="parallax-container"
         style={{
@@ -102,6 +101,8 @@ const Design = () => {
         }}
       >
         <div className="sub-sections">
+          <Header />
+
           <div id="concept" className="element">
             <section ref={ref1} className="section-container">
               <animated.div className="section-content" style={animation1}>

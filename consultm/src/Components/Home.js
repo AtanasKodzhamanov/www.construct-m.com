@@ -39,22 +39,22 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <Header />
-      <div className="slideshow-container">
-        <Slideshow slides={slides} interval={4000} images={images} />
-      </div>
-      <div className="bottom-text-container">
-        <div className="promo-text">
-          <p>
-            We are happy to help with your real estate, design or construction project - contact us for more information.
-          </p>
-          <hr class="hr-line"></hr>
+      <div className="background-shading">
+        <Header />
+        <div className="slideshow-container">
+          <Slideshow slides={slides} interval={4000} images={images} />
         </div>
-        <div className="promo-text">
-          <p>
-            You can rely on a team with more than 10 years of experience.
-          </p>
-          <hr class="hr-line"></hr>
+        <div className="bottom-text-container">
+          <div className="promo-text">
+            <h2>EMPOWERING YOUR PROJECTS</h2>
+            <p>
+              We are happy to help with your real estate, design or construction project. You can rely on a team with more than 10 years of experience.
+            </p>
+            <p>
+              Contact us for more information.
+            </p>
+            <hr class="hr-line"></hr>
+          </div>
         </div>
       </div>
     </div>

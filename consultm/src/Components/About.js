@@ -12,8 +12,10 @@ const About = () => {
   return (
     <>
       <div className={styles.about}>
-        <Header />
-        <ContactUsForm />
+        <div className="background-shading">
+          <Header />
+          <ContactUsForm />
+        </div>
       </div>
     </>
   )

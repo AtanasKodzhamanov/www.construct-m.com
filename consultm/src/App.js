@@ -1,4 +1,4 @@
-import './App.css'
+import './Global.css'
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Studies from './Components/Studies'

@@ -98,8 +98,8 @@ const Studies = () => {
           backgroundImage: `url(${background})`,
         }}
       >
-        <Header />
         <div className="sub-sections">
+          <Header />
           <div id="preliminary" className="element">
             <section ref={ref1} className="section-container">
               <animated.div className="section-content" style={animation1}>

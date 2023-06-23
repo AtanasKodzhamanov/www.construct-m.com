@@ -1,31 +1,30 @@
-import React, { useState, useEffect } from 'react'
-import './Slideshow.css'
+import React, { useState, useEffect } from 'react';
+import styles from './Slideshow.module.css';
 
 const Slideshow = ({ slides, interval = 2000, images = 1 }) => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
-    }, interval)
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, interval);
 
     return () => {
-      clearInterval(timer)
-    }
-  }, [slides.length, interval])
+      clearInterval(timer);
+    };
+  }, [slides.length, interval]);
 
   return (
     <>
       {slides.map((slide, index) => (
         <div
-          className={`slideshow-image-container ${
-            index === currentSlide ? 'active' : ''
-          }`}
+          className={`${styles['slideshow-image-container']} ${index === currentSlide ? styles['active'] : ''
+            }`}
           key={index}
         >
           {[...Array(images)].map((_, i) => (
             <img
-              className="slideshow-image"
+              className={styles['slideshow-image']}
               src={slides[(index + i) % slides.length]}
               alt="Slide"
               key={i}
@@ -39,7 +38,7 @@ const Slideshow = ({ slides, interval = 2000, images = 1 }) => {
         </div>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default Slideshow
+export default Slideshow;
