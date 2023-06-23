@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--background-shade);
   background-blend-mode: multiply;
 }
 
@@ -19,15 +19,6 @@
   justify-content: right;
 }
 
-@media (max-width: 768px) {
-  .sectionContainerRight {
-    flex-direction: column-reverse;
-  }
-  .sectionContainerRight {
-    justify-content: center;
-  }
-}
-
 .sectionContainer::before {
   content: '';
   position: absolute;
@@ -37,6 +28,16 @@
   height: 100%;
   background: inherit;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    flex-direction: column;
+  }
+  .sectionContainerRight {
+    flex-direction: column-reverse;
+  }
+
 }
 
 .sectionContent {
@@ -88,4 +89,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 800px;
+  margin:32px;
 }
+

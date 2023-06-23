@@ -29,6 +29,10 @@
     background-color: #F8F9FA; 
 }
 
+.input-box h1{
+    color:var(--primary-color)
+}
+
 @media screen and (max-width: 900px) {
     .info-box{
         padding:32px;

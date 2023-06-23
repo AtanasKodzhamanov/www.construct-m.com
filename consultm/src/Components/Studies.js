@@ -98,47 +98,45 @@ const Studies = () => {
           backgroundImage: `url(${background})`,
         }}
       >
-        <div className={styles.backgroundShading}>
-          <Header />
-          <div id="preliminary" className={styles.element}>
-            <section ref={ref1} className={styles.sectionContainer}>
-              <animated.div className={styles.sectionContent} style={animation1}>
-                <h1 className={styles.sectionTitle}>Preliminary Studies</h1>
-                <p className={styles.sectionText}>
-                  Defines the outlines of future development sites so that they comply with the current urban development plan.
-                </p>
-              </animated.div>
-              <div className={styles.slideshowContainer}>
-                <Slideshow slides={slides1} interval={4000} images={1} />
-              </div>
-            </section>
-          </div>
-          <div id="real-estate" className={styles.element}>
-            <section ref={ref2} className={`${styles.sectionContainer} ${styles.sectionContainerRight}`}>
-              <div className={styles.slideshowContainer}>
-                <Slideshow slides={slides2} interval={4000} images={1} />
-              </div>
-              <animated.div className={styles.sectionContent} style={animation2}>
-                <h1 className={styles.sectionTitle}>Real Estate</h1>
-                <p className={styles.sectionText}>
-                  Provides you with an integrated solution for the essential communications and engineering networks in the development as well as coordinated due diligange - verification of the chain of ownership, сhecking for encumbrances - mortgages and foreclosures, limited property rights - right of use, easement right, building right, legal disputes with the subject property, owner verification.
-                </p>
-              </animated.div>
-            </section>
-          </div>
-          <div id="spatial-consulting" className={styles.element}>
-            <section ref={ref3} className={styles.sectionContainer}>
-              <animated.div className={styles.sectionContent} style={animation3}>
-                <h1 className={styles.sectionTitle}>Spatial</h1>
-                <p className={styles.sectionText}>
-                  Assists you in determining the volume of construction within the legally permissible limits - storey heights, spatial solution for individual floors, schematics of facades, basis of landscaping.
-                </p>
-              </animated.div>
-              <div className={styles.slideshowContainer}>
-                <Slideshow slides={slides3} interval={4000} images={1} />
-              </div>
-            </section>
-          </div>
+        <Header />
+        <div id="preliminary" className={styles.element}>
+          <section ref={ref1} className={styles.sectionContainer}>
+            <animated.div className={styles.sectionContent} style={animation1}>
+              <h1 className={styles.sectionTitle}>Preliminary Studies</h1>
+              <p className={styles.sectionText}>
+                Defines the outlines of future development sites so that they comply with the current urban development plan.
+              </p>
+            </animated.div>
+            <div className={styles.slideshowContainer}>
+              <Slideshow slides={slides1} interval={4000} images={1} />
+            </div>
+          </section>
+        </div>
+        <div id="real-estate" className={styles.element}>
+          <section ref={ref2} className={`${styles.sectionContainer} ${styles.sectionContainerRight}`}>
+            <div className={styles.slideshowContainer}>
+              <Slideshow slides={slides2} interval={4000} images={1} />
+            </div>
+            <animated.div className={styles.sectionContent} style={animation2}>
+              <h1 className={styles.sectionTitle}>Real Estate</h1>
+              <p className={styles.sectionText}>
+                Provides you with an integrated solution for the essential communications and engineering networks in the development as well as coordinated due diligange - verification of the chain of ownership, сhecking for encumbrances - mortgages and foreclosures, limited property rights - right of use, easement right, building right, legal disputes with the subject property, owner verification.
+              </p>
+            </animated.div>
+          </section>
+        </div>
+        <div id="spatial-consulting" className={styles.element}>
+          <section ref={ref3} className={styles.sectionContainer}>
+            <animated.div className={styles.sectionContent} style={animation3}>
+              <h1 className={styles.sectionTitle}>Spatial</h1>
+              <p className={styles.sectionText}>
+                Assists you in determining the volume of construction within the legally permissible limits - storey heights, spatial solution for individual floors, schematics of facades, basis of landscaping.
+              </p>
+            </animated.div>
+            <div className={styles.slideshowContainer}>
+              <Slideshow slides={slides3} interval={4000} images={1} />
+            </div>
+          </section>
         </div>
       </animated.div>
     </>

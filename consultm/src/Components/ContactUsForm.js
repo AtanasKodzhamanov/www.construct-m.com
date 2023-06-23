@@ -35,11 +35,11 @@ const ContactForm = () => {
     return (
         <div className={styles['contact-form']}>
             <div className={styles['info-box']}>
-                <h2>Contact us</h2>
+                <h1>Contact us</h1>
                 <ul>
-                    <li> <h3>EMAIL: </h3 ><p>placeholder@gmail.com </p></li>
-                    <li> <h3>PHONE: </h3 ><p>+ 324 221 4214 </p></li>
-                    <li> <h3>ADDRESS: </h3 ><p>address, postcode, street, number </p></li>
+                    <li> <h2>EMAIL: </h2 ><p>placeholder@gmail.com </p></li>
+                    <li> <h2>PHONE: </h2 ><p>+ 324 221 4214 </p></li>
+                    <li> <h2>ADDRESS: </h2 ><p>address, postcode, street, number </p></li>
                 </ul>
             </div>
 

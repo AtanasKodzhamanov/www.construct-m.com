@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { animated, useSpring, config } from 'react-spring'
-import './Page.css'
+import styles from './Page.module.css'
 import background from '../Assets/shard.jpg'
 import { useLocation } from 'react-router-dom'
 import useGoogleAnalytics from './useGoogleAnalytics'
@@ -95,19 +95,19 @@ const Design = () => {
   return (
     <>
       <animated.div
-        className="parallax-container"
+        className={styles.parallaxContainer}
         style={{
           backgroundImage: `url(${background})`,
         }}
       >
-        <div className="sub-sections">
+        <div className={styles.subSections}>
           <Header />
 
-          <div id="concept" className="element">
-            <section ref={ref1} className="section-container">
-              <animated.div className="section-content" style={animation1}>
-                <h1 className="section-title">Concept</h1>
-                <p className="section-text">
+          <div id="concept" className={styles.element}>
+            <section ref={ref1} className={`${styles.sectionContainer}`}>
+              <animated.div className={styles.sectionContent} style={animation1}>
+                <h1 className={styles.sectionTitle}>Concept</h1>
+                <p className={styles.sectionText}>
                   The scope and content of the conceptual design are essential for the selection of the architectural-spatial solution, structural solution, installation and technological solutions, safety systems and more as required by the design contract.
                 </p>
               </animated.div>
@@ -134,22 +134,22 @@ const Design = () => {
               </div>
             </section>
           </div>
-          <div id="technical" className="element">
-            <section ref={ref2} className="section-container right">
-              <animated.div className="section-content" style={animation2}>
-                <h1 className="section-title">Technical</h1>
-                <p className="section-text">
+          <div id="technical" className={styles.element}>
+            <section ref={ref2} className={`${styles.sectionContainer} ${styles.sectionContainerRight}`}>
+              <animated.div className={styles.sectionContent} style={animation2}>
+                <h1 className={styles.sectionTitle}>Technical</h1>
+                <p className={styles.sectionText}>
                   The technical design clarifies and complements the conceptual design as well as develops the assessment of compliance with the requirements for the structures, serves as a basis for the building permit issue and execution of the works until completion of the project.
                 </p>
               </animated.div>
             </section>
           </div>
-          <div id="interior" className="element">
-            <section ref={ref3} className="section-container">
-              <animated.div className="section-content" style={animation3}>
-                <h1 className="section-title">Interior</h1>
-                <p className="section-text">
-                  Creating healthier enviroment, planned and organised to suit the available space as well as the preferred design and aesthetics.
+          <div id="interior" className={styles.element}>
+            <section ref={ref3} className={`${styles.sectionContainer}`}>
+              <animated.div className={styles.sectionContent} style={animation3}>
+                <h1 className={styles.sectionTitle}>Interior</h1>
+                <p className={styles.sectionText}>
+                  Creating healthier environment, planned and organized to suit the available space as well as the preferred design and aesthetics.
                 </p>
               </animated.div>
             </section>

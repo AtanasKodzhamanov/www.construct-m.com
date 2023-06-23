@@ -1,4 +1,6 @@
-.footer-container {
+/* YourComponent.module.css */
+
+.footerContainer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -7,7 +9,7 @@
   z-index: 1;
 }
 
-.footer-text {
+.footerText {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 2vw, 1.3rem);
@@ -16,12 +18,12 @@
 }
 
 @media (max-width: 768px) {
-  .footer-text {
+  .footerText {
     letter-spacing: 0px;
   }
 }
 
-p.footer-text {
+p.footerText {
   margin: 0px;
   margin-left: clamp(0.1rem, 2vw, 2rem);
 }

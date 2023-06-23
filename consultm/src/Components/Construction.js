@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { animated, useSpring, config } from 'react-spring'
-import './Page.css'
+import styles from './Page.module.css'
 import background from '../Assets/construction-background.jpg'
 import { useLocation } from 'react-router-dom'
 import useGoogleAnalytics from './useGoogleAnalytics'
@@ -72,38 +72,38 @@ const Construction = () => {
   return (
     <>
       <animated.div
-        className="parallax-container"
+        className={styles.parallaxContainer}
         style={{
           backgroundImage: `url(${background})`,
         }}
       >
         <Header />
-        <div className="sub-sections">
-          <div id="management" className="element">
-            <section ref={ref1} className="section-container">
-              <animated.div className="section-content" style={animation1}>
-                <h1 className="section-title">Management</h1>
-                <p className="section-text">
+        <div className={styles.subSections}>
+          <div id="management" className={styles.element}>
+            <section ref={ref1} className={`${styles.sectionContainer}`}>
+              <animated.div className={styles.sectionContent} style={animation1}>
+                <h1 className={styles.sectionTitle}>Management</h1>
+                <p className={styles.sectionText}>
                   Directing and control of the project from idea to completion and hand-over.
                 </p>
               </animated.div>
             </section>
           </div>
-          <div id="works" className="element">
-            <section ref={ref2} className="section-container right">
-              <animated.div className="section-content" style={animation2}>
-                <h1 className="section-title">Works</h1>
-                <p className="section-text">
+          <div id="works" className={styles.element}>
+            <section ref={ref2} className={`${styles.sectionContainer} ${styles.sectionContainerRight}`}>
+              <animated.div className={styles.sectionContent} style={animation2}>
+                <h1 className={styles.sectionTitle}>Works</h1>
+                <p className={styles.sectionText}>
                   Execution ot the construction works - site preparation, structural works, roofings, facades, finishes.
                 </p>
               </animated.div>
             </section>
           </div>
-          <div id="supervision" className="element">
-            <section ref={ref3} className="section-container">
-              <animated.div className="section-content" style={animation3}>
-                <h1 className="section-title">Supervision</h1>
-                <p className="section-text">
+          <div id="supervision" className={styles.element}>
+            <section ref={ref3} className={`${styles.sectionContainer}`}>
+              <animated.div className={styles.sectionContent} style={animation3}>
+                <h1 className={styles.sectionTitle}>Supervision</h1>
+                <p className={styles.sectionText}>
                   Shared on-site supervision, as and where is required over the construction works.
                 </p>
               </animated.div>

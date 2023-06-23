@@ -1,10 +1,10 @@
 import React from 'react'
-import './Footer.css'
+import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <p className="footer-text">
+    <div className={styles.footerContainer}>
+      <p className={styles.footerText}>
         © 2023 CONSTRUCT-M. All rights reserved.
       </p>
     </div>

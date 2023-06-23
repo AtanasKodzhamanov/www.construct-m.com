@@ -1,4 +1,4 @@
-.header-container {
+.headerContainer {
   position: sticky;
   display: flex;
   flex-direction: row;
@@ -13,7 +13,7 @@
   top: 0;
 }
 
-.header-container h1 {
+.headerContainer h1 {
   letter-spacing: 1.4vw; /* Adjust the value as needed */
 }
 
@@ -22,7 +22,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 60%;
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 500;
   font-size: 30px;
@@ -30,24 +30,23 @@
   color: whitesmoke;
 }
 
-a:hover {
+.link:hover {
   text-decoration: underline;
 }
-
 
 .title a:hover {
   text-decoration: none;
 }
 
-.design-section,
-.construction-section,
-.about-section,
-.studies-section {
+.designSection,
+.constructionSection,
+.aboutSection,
+.studiesSection {
   position: relative;
   display: inline-block;
 }
 
-.scroll-links {
+.scrollLinks {
   display: none;
   position: absolute;
   top: 80%;
@@ -57,34 +56,34 @@ a:hover {
   z-index: 1;
 }
 
-.scroll-links .scroll-trigger {
+.scrollLinks .scrollTrigger {
   display: block;
   padding: 12px 16px;
   text-decoration: none;
   color: white;
 }
 
-.scroll-links .scroll-trigger:hover {
+.scrollLinks .scrollTrigger:hover {
   background-color: #9d9d9d;
 }
 
-.studies-section:hover .scroll-links {
+.studiesSection:hover .scrollLinks {
   display: block;
 }
 
-.design-section:hover .scroll-links {
+.designSection:hover .scrollLinks {
   display: block;
 }
 
-.construction-section:hover .scroll-links {
+.constructionSection:hover .scrollLinks {
   display: block;
 }
 
-.about-section:hover .scroll-links {
+.aboutSection:hover .scrollLinks {
   display: block;
 }
 
-.scroll-links .active {
+.scrollLinks .active {
   background-color: #9d9d9d;
   text-decoration: underline;
 }
@@ -100,7 +99,7 @@ a:hover {
 
 /* Sidebar */
 /* The side navigation menu */
-.sidenav {
+.sideNav {
   display: none;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -110,15 +109,15 @@ a:hover {
   left: 0;
   background-color: rgba(2, 2, 2, 1);
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sideNav */
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sideNav a {
   text-decoration: none;
   transition: 0.3s;
 }
-.sidenav h3 {
+.sideNav h3 {
   display: block;
   padding: 8px 8px 8px 32px;
   font-weight: 100;
@@ -128,12 +127,12 @@ a:hover {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sideNav a:hover {
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+
+.closeBtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -141,8 +140,7 @@ a:hover {
   margin-left: 50px;
 }
 
-/* Style the hamburger icon */
-#hamburger-icon {
+.hamburgerIcon {
   color: #000;
   display: none;
 }
@@ -152,11 +150,11 @@ a:hover {
     display: none;
   }
 
-  #hamburger-icon {
+  .hamburgerIcon {
     display: block;
   }
 
-  .sidenav {
+  .sideNav {
     display: flex;
     flex-direction: column;
   }

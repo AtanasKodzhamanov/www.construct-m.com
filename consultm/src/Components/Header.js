@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import styles from './Header.module.css'
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -32,45 +32,45 @@ const Header = () => {
   }, [location.pathname])
 
   return (
-    <div className="header-container">
-      <div className="title">
+    <div className={styles.headerContainer}>
+      <div className={styles.title}>
         <Link to="/">
           <h1>CONSTRUCT-M</h1>
         </Link>
       </div>
 
-      <div id="hamburger-icon" onClick={toggleNav}>
+      <div id="hamburger-icon" class={styles.hamburgerIcon} onClick={toggleNav}>
         <FontAwesomeIcon icon={faBars} size="lg" style={{ color: 'white' }} />
       </div>
 
-      <div id="mySidenav" className="sidenav">
-        <div className="studies-section">
+      <div id="mySidenav" className={styles.sideNav}>
+        <div className={styles.studiesSection}>
           <Link
-            className={activeLink === '/studies' ? 'active' : 'inactive'}
+            className={activeLink === '/studies' ? styles.active : styles.inactive}
             to="/studies#preliminary"
           >
             <h3>STUDIES</h3>
           </Link>
         </div>
-        <div className="design-section">
+        <div className={styles.designSection}>
           <Link
-            className={activeLink === '/design' ? 'active' : ''}
+            className={activeLink === '/design' ? styles.active : ''}
             to="/design#concept"
           >
             <h3>DESIGN</h3>
           </Link>
         </div>
-        <div className="construction-section">
+        <div className={styles.constructionSection}>
           <Link
-            className={activeLink === '/construction' ? 'active' : ''}
+            className={activeLink === '/construction' ? styles.active : ''}
             to="/construction#management"
           >
             <h3>CONSTRUCTION</h3>
           </Link>
         </div>
-        <div className="about-section">
+        <div className={styles.aboutSection}>
           <Link
-            className={activeLink === '/about' ? 'active' : ''}
+            className={activeLink === '/about' ? styles.active : ''}
             to="/about#team"
           >
             <h3>CONTACT</h3>
@@ -78,76 +78,76 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="nav">
-        <div className="studies-section">
+      <div className={styles.nav}>
+        <div className={styles.studiesSection}>
           <Link
-            className={activeLink === '/studies' ? 'active' : 'inactive'}
+            className={activeLink === '/studies' ? styles.active : styles.inactive}
             to="/studies#preliminary"
           >
             <h3>STUDIES</h3>
           </Link>
-          <div className="scroll-links">
-            <Link className="scroll-trigger" to="/studies#preliminary">
+          <div className={styles.scrollLinks}>
+            <Link className={styles.scrollTrigger} to="/studies#preliminary">
               <h4>Preliminary</h4>
             </Link>
-            <Link className="scroll-trigger" to="/studies#real-estate">
+            <Link className={styles.scrollTrigger} to="/studies#real-estate">
               <h4>Real Estate</h4>
             </Link>
-            <Link className="scroll-trigger" to="/studies#spatial-consulting">
+            <Link className={styles.scrollTrigger} to="/studies#spatial-consulting">
               <h4>Spatial Consulting</h4>
             </Link>
           </div>
         </div>
-        <div className="design-section">
+        <div className={styles.designSection}>
           <Link
-            className={activeLink === '/design' ? 'active' : ''}
+            className={activeLink === '/design' ? styles.active : ''}
             to="/design#concept"
           >
             <h3>DESIGN</h3>
           </Link>
-          <div className="scroll-links">
-            <Link className="scroll-trigger" to="/design#concept">
+          <div className={styles.scrollLinks}>
+            <Link className={styles.scrollTrigger} to="/design#concept">
               <h4>Concept</h4>
             </Link>
-            <Link className="scroll-trigger" to="/design#technical">
+            <Link className={styles.scrollTrigger} to="/design#technical">
               <h4>Technical</h4>
             </Link>
-            <Link className="scroll-trigger" to="/design#interior">
+            <Link className={styles.scrollTrigger} to="/design#interior">
               <h4>Interior</h4>
             </Link>
           </div>
         </div>
-        <div className="construction-section">
+        <div className={styles.constructionSection}>
           <Link
-            className={activeLink === '/construction' ? 'active' : ''}
+            className={activeLink === '/construction' ? styles.active : ''}
             to="/construction#management"
           >
             <h3>CONSTRUCTION</h3>
           </Link>
-          <div className="scroll-links">
-            <Link className="scroll-trigger" to="/construction#management">
+          <div className={styles.scrollLinks}>
+            <Link className={styles.scrollTrigger} to="/construction#management">
               <h4>Management</h4>
             </Link>
-            <Link className="scroll-trigger" to="/construction#works">
+            <Link className={styles.scrollTrigger} to="/construction#works">
               <h4>Works</h4>
             </Link>
-            <Link className="scroll-trigger" to="/construction#supervision">
+            <Link className={styles.scrollTrigger} to="/construction#supervision">
               <h4>Supervision</h4>
             </Link>
           </div>
         </div>
-        <div className="about-section">
+        <div className={styles.aboutSection}>
           <Link
-            className={activeLink === '/about' ? 'active' : ''}
+            className={activeLink === '/about' ? styles.active : ''}
             to="/about#team"
           >
             <h3>CONTACT</h3>
           </Link>
-          <div className="scroll-links">
-            <Link className="scroll-trigger" to="/about#team">
+          <div className={styles.scrollLinks}>
+            <Link className={styles.scrollTrigger} to="/about#team">
               <h4>Team</h4>
             </Link>
-            <Link className="scroll-trigger" to="/about#experience">
+            <Link className={styles.scrollTrigger} to="/about#experience">
               <h4>Experience</h4>
             </Link>
           </div>
