@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import './Home.css'
+import styles from './Home.module.css'
 import useGoogleAnalytics from './useGoogleAnalytics'
 import Slideshow from './Slideshow'
 import Header from './Header'
+
 const Home = () => {
   useGoogleAnalytics()
   const [images, setImages] = useState(3)
@@ -38,14 +39,14 @@ const Home = () => {
   ]
 
   return (
-    <div className="home-container">
+    <div className={styles.homeContainer}>
       <div className="background-shading">
         <Header />
-        <div className="slideshow-container">
+        <div className={styles.slideshowContainer}>
           <Slideshow slides={slides} interval={4000} images={images} />
         </div>
-        <div className="bottom-text-container">
-          <div className="promo-text">
+        <div className={styles.bottomTextContainer}>
+          <div className={styles.promoText}>
             <h2>EMPOWERING YOUR PROJECTS</h2>
             <p>
               We are happy to help with your real estate, design or construction project. You can rely on a team with more than 10 years of experience.
@@ -53,7 +54,7 @@ const Home = () => {
             <p>
               Contact us for more information.
             </p>
-            <hr class="hr-line"></hr>
+            <hr className={styles.hrLine} />
           </div>
         </div>
       </div>

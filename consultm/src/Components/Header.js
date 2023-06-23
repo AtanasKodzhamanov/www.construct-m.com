@@ -73,7 +73,7 @@ const Header = () => {
             className={activeLink === '/about' ? 'active' : ''}
             to="/about#team"
           >
-            <h3>ABOUT</h3>
+            <h3>CONTACT</h3>
           </Link>
         </div>
       </div>
@@ -141,7 +141,7 @@ const Header = () => {
             className={activeLink === '/about' ? 'active' : ''}
             to="/about#team"
           >
-            <h3>ABOUT</h3>
+            <h3>CONTACT</h3>
           </Link>
           <div className="scroll-links">
             <Link className="scroll-trigger" to="/about#team">

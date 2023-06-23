@@ -37,9 +37,9 @@ const ContactForm = () => {
             <div className={styles['info-box']}>
                 <h2>Contact us</h2>
                 <ul>
-                    <li> <h3>EMAIL: </h3 ><p>xxxxxxxxxxxx@gmail.com </p></li>
-                    <li> <h3>PHONE: </h3 ><p>++324 2214214 </p></li>
-                    <li> <h3>ADDRESS: </h3 ><p>xxxxxxx, xxxx,xxx,xxxxxx </p></li>
+                    <li> <h3>EMAIL: </h3 ><p>placeholder@gmail.com </p></li>
+                    <li> <h3>PHONE: </h3 ><p>+ 324 221 4214 </p></li>
+                    <li> <h3>ADDRESS: </h3 ><p>address, postcode, street, number </p></li>
                 </ul>
             </div>
 

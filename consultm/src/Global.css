@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
 
+/* Media Queries */
+/*
+@custom-media --phone (max-width: 768px);
+@custom-media --table (min-width: 768px) and (max-width: 1024px);
+@custom-media --macbook (min-width: 1024px) and (max-width: 1440px);
+@custom-media --desktop (min-width: 1440px);
+*/
+
 :root {
   --primary-color: #4a555c;
   --secondary-color: #4c6069;
@@ -70,16 +78,16 @@ h4{
   text-shadow: 0 0 1px black;
 
 }
-/* Media Queries */
-/*
-@custom-media --phone (max-width: 768px);
-@custom-media --table (min-width: 768px) and (max-width: 1024px);
-@custom-media --macbook (min-width: 1024px) and (max-width: 1440px);
-@custom-media --desktop (min-width: 1440px);
-*/
+
 
 @media (max-width: 768px) {
   .section-container {
     flex-direction: column;
   }
+}
+
+.background-shading{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
 }
