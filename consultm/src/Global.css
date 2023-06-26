@@ -10,10 +10,11 @@
 */
 
 :root {
-  --primary-color: #4a555c;
+  --primary-color: #8B959A;
   --secondary-color: #4c6069;
   --accent-color: #00f;
   --background-shade:rgba(0, 0, 0, 0.35);
+  --menu-hover: #8b959aba;
 }
 
 body {
@@ -57,7 +58,7 @@ h2{
 h3{
   font-family: 'Sofia Sans', sans-serif;
   font-weight: 400;
-  font-size: 2.5vw; /* Adjust the value as needed */
+  font-size: 2.5vw; 
   font-size: clamp(1.3rem, 2.5vw, 2.5rem);
   color: white;
   padding: 0;
@@ -69,9 +70,9 @@ h3{
 
 h4{
   font-family: 'Saira Extra Condensed', sans-serif;
-  font-weight: 100;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
-  letter-spacing: 0vw; /* Adjust the value as needed */
+  font-weight: 400;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  letter-spacing: 1px; 
   color: white;
   padding: 0;
   margin: 0;

@@ -112,11 +112,7 @@ const Design = () => {
                 </p>
               </animated.div>
               <div
-                style={{
-                  backgroundColor: 'rgba(76, 96, 105, 0.8)',
-                  width: '500px',
-                  height: '500px',
-                }}
+                className={styles.canvasContainer}
               >
                 {webglSupport ? (
                   <Canvas>

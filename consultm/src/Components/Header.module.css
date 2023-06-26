@@ -30,12 +30,17 @@
   color: whitesmoke;
 }
 
-.link:hover {
-  text-decoration: underline;
-}
 
 .title a:hover {
   text-decoration: none;
+}
+
+h3{
+  padding:8px;
+  border-radius: 25px;
+}
+h3:hover{
+  background-color: var(--menu-hover);
 }
 
 .designSection,
@@ -49,11 +54,12 @@
 .scrollLinks {
   display: none;
   position: absolute;
-  top: 80%;
-  left: -30%;
-  background-color: var(--primary-color);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 80%; 
+  left: 0%; 
+  background-color: var(--menu-hover);
   z-index: 1;
+  min-width: 200px;
+  border-radius: 25px;
 }
 
 .scrollLinks .scrollTrigger {
@@ -65,6 +71,8 @@
 
 .scrollLinks .scrollTrigger:hover {
   background-color: #9d9d9d;
+  border-radius: 25px;
+
 }
 
 .studiesSection:hover .scrollLinks {
@@ -84,12 +92,12 @@
 }
 
 .scrollLinks .active {
-  background-color: #9d9d9d;
+  background-color: var(--menu-hover);
   text-decoration: underline;
 }
 
-.active {
-  text-decoration: underline;
+.active h3 {
+  background-color: var(--menu-hover);
 }
 
 .title img {
@@ -145,7 +153,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .nav {
     display: none;
   }
