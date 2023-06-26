@@ -11,6 +11,7 @@
     .contact-form{
         flex-direction: column;
         padding:16px;
+        width:100%;
     }
 }
     
