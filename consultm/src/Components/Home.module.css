@@ -1,14 +1,30 @@
-.homeContainer {
-  display: flex;
-  flex-direction: column;
+.background{
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: url('../Assets/25846432.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left center;
-  height: 100vh;
-  justify-content: flex-start;
+  background-position: left center;  
   background-color: var(--background-shade);
   background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.homeContainer {
+  height: 100vh;
+  position: relative;
+  overflow: auto;
+
 }
 
 .slideshowContainer {

@@ -39,8 +39,8 @@ const Home = () => {
   ]
 
   return (
-    <div className={styles.homeContainer}>
-      <div className="background-shading">
+    <div className={styles.background}>
+      <div className={styles.homeContainer}>
         <Header />
         <div className={styles.slideshowContainer}>
           <Slideshow slides={slides} interval={4000} images={images} />

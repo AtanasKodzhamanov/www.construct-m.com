@@ -58,7 +58,7 @@ h3:hover{
   left: 0%; 
   background-color: var(--menu-hover);
   z-index: 1;
-  min-width: 200px;
+  min-width: 180px;
   border-radius: 25px;
 }
 
